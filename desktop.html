@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi">
+<!--    <link rel="apple-touch-icon" href="second.png">-->
+    <link rel="shortcut icon" href="myhome.ico">
+<!--    <link rel="shortcut icon" href="02.jpg">-->
+    
+     <script type="text/javascript">
+var mobileKeyWords = new Array('iPhone', 'iPod', 'BlackBerry', 'Android', 'Windows CE', 'LG', 'MOT', 'SAMSUNG', 'SonyEricsson','Windows Phone');
+for (var word in mobileKeyWords){
+if (navigator.userAgent.match(mobileKeyWords[word]) != null){
+location.href = "device_mobile.html"; //모바일로 이동할 주소
+break;}
+}
+
+</script>
+    <title>해상도별보기</title>
+    <h1> 이것은 데스크탑 화면</h1>
+    <style>
+    
+        body{ margin: 0; padding: 0; background-color: greenyellow; }
+ 
+    </style>
+</head>
+<body>
+    <div id="dpi"></div>
+</body>
+</html>
