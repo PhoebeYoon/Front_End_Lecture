@@ -38,6 +38,36 @@
     <div id="dpi"></div>
 </body>
 </html>
+```   
 
+
+### 접속한 디바이스의 종류를 알아내는 코드
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>브라우저테스트</title>
+</head>
+<body>
+  <script type="text/javascript">
+    var mobileKeyWords = new Array('iPhone', 'iPod', 'BlackBerry', 'Android', 'Windows CE', 
+    'LG', 'MOT', 'SAMSUNG', 'SonyEricsson', 'Windows Phone');
+    for (var word in mobileKeyWords) {
+      if (navigator.userAgent.match(mobileKeyWords[word]) != null) {
+        location.href = "whatdevice.html"; 
+        break;
+      }
+    }
+  </script>
+ 접속한 디바이스를 맞춰보자
+</body>
+</html>
 
 ```
+
+
+
+
