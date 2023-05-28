@@ -57,7 +57,7 @@
     'LG', 'MOT', 'SAMSUNG', 'SonyEricsson', 'Windows Phone');
     for (var word in mobileKeyWords) {
       if (navigator.userAgent.match(mobileKeyWords[word]) != null) {
-        location.href = "whatdevice.html"; 
+        location.href = "whatdevice.html";   <-- 여기에 모바일로 접속시 이동한 페이지를 적어줍니다 
         break;
       }
     }
@@ -65,7 +65,6 @@
  접속한 디바이스를 맞춰보자
 </body>
 </html>
-
 ```
 
 
