@@ -47,3 +47,6 @@ aspect-ratio: 0.5;
 https://developer.mozilla.org/en-US/docs/Web/CSS/background    
 https://developer.mozilla.org/en-US/docs/Web/CSS/backface-visibility     
 https://developer.mozilla.org/en-US/docs/Web/CSS/backdrop-filter    
+
+
+clamp 함수(메서드)는 어떤 값이 범위 안에 있는지 검사하고 범위 내에 있으면 그 값을 바로 반환합니다. 단, 해당 값이 범위보다 낮을때는 최소값을 범위보다 높을때는 최대 값을 반환해주는 함수입니다
