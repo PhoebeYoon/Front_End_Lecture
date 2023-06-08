@@ -7,7 +7,8 @@
 4. display : none, display:visible
 5. px, em, rem 단위
 6. @media screen () {}  모바일버전 : min-width: 작은사이즈부터 큰 사이트 | 웹사이트 : max-width: 큰사이즈부터 작은 사이즈 순으로 
-7. 
+7. position: relative, absolute
+8. 
 ``` css
 @media (orientation : landscape) {
 
