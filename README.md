@@ -8,7 +8,7 @@ display:-webkit-box
 overflow: hidden      
 ----- ( webkit value rather than a webkit property which you really don't see too often and that display it's a webkit box which i've never seen before but we need to have that on there and we need one more line here which is going to be another webkit and this one is called box orient like that and it's going to be vertical because I guess we're saying it's 
 
-#### :peach: [html & css]
+#### [html & css]
 | No | 내용 | 
 |--- |:---|
 |1|강사소개,OT, 에디터사용방법 html 소개,브라우저의이해,웹접근성,웹표준의 이해. 웹에 대한 전반적인 작동원리, 웹표준과 접근성, 웹서버 등록, dothome 를 이용한 본인웹사이트 생성, 웹문서와 브라우저의 이해|
@@ -36,7 +36,7 @@ overflow: hidden
 |23| 심플한 웹사이트 제작 , 레이아웃을 활용한 페이지 만들기 |
  
  
-#### :peach: [자바스크립트]
+#### [자바스크립트]
 | No | 내용 |
 |--- |:---|
 |24|웹반응형 ,  es6문법소개, 반응형에 정의, 반응형에 사용되는 단위들 (em, rem, vw, vh,vmin,vmax)|
