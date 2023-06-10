@@ -7,7 +7,7 @@ div {
   padding: 20px; 
   width: 300px;
  /* resize: both; */
-  overflow: auto;
+  overflow: auto; /* overflow:auto 를 설정해줘야 한다.  */
   
    resize:horizontal;  
    /* resize:vertical;  */
