@@ -1,7 +1,12 @@
-##### 🍑  Front_End 과정 1단계 
+##### 🍑  Front_End 과정 1단계   
+1. place-content   
+2. place-items   
+3. place-self   
+위의 내용은 flexbox와 grid layout에서 사용됩니다.   
 
 
-## place-content속성은 flexbox와 grid layout에서 사용되며, align-content, justify-content의 단축입니다 
+## place-content속성은 align-content, justify-content의 단축입니다 
+
 
 ```html
 <!DOCTYPE html>
