@@ -1,4 +1,6 @@
-# Front_End_Lecture
+
+##### 🍑  Front_End 과정 1단계 
+
 
 ## view port에 대한 설명
 
@@ -67,6 +69,13 @@
 </html>
 ```
 
+미디어 쿼리를 자바스크립트로 실행할때 (max-width:600px)값을 matchMedia()를 사용한다
+
+```js
+let mql = window.matchMedia("(max-width: 600px)");
+
+document.querySelector(".mq-value").innerText = mql.media;
+```
 
 
 
