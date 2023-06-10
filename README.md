@@ -69,13 +69,66 @@
 </html>
 ```
 
-미디어 쿼리를 자바스크립트로 실행할때 (max-width:600px)값을 matchMedia()를 사용한다
-
+#### 미디어 쿼리를 자바스크립트로 실행할때 (max-width:600px)값을 matchMedia()를 사용한다
+주요내용은,   
 ```js
 let mql = window.matchMedia("(max-width: 600px)");
-
 document.querySelector(".mq-value").innerText = mql.media;
+```     
+
+```html
+  <style>
+    body { background: deepskyblue;}
+    @media (max-width:800px) {
+      body { background-color: orange;}
+    }
+  </style>
+  <title>Document</title>
+</head>
+<body>
+  <span class="mq-value"></span>
+  <span class="mq-match"></span>
+<script>
+let mql = window.matchMedia("(max-width:800px)");
+document.querySelector(".mq-value").innerText = mql.media;
+document.querySelector(".mq-match").innerText = mql.matches;
+if (mql.matches) {
+  document.querySelector(".mq-value").innerText  ="Done"
+}
+</script>
+
 ```
+```html
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+<p></p>
+<script>
+const para = document.querySelector("p"); // This is the UI element where to display the text
+const mql = window.matchMedia("(max-width: 600px)");
+
+mql.addEventListener("change", (event) => {
+  if (event.matches) {
+    // The viewport is 600 pixels wide or less
+    para.textContent = "This is a narrow screen — less than 600px wide.";
+    document.body.style.backgroundColor = "red";
+  } else {
+    // The viewport is more than 600 pixels wide
+    para.textContent = "This is a wide screen — more than 600px wide.";
+    document.body.style.backgroundColor = "blue";
+  }
+});
+</script>
+</body>
+</html>
+```
+
 
 
 
