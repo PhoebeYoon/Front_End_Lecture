@@ -9,7 +9,7 @@ overflow: hidden
 ----- ( webkit value rather than a webkit property which you really don't see too often and that display it's a webkit box which i've never seen before but we need to have that on there and we need one more line here which is going to be another webkit and this one is called box orient like that and it's going to be vertical because I guess we're saying it's 
 
 #### :peach: [html & css]
-| No | 내용 |
+| No | 내용 | 
 |--- |:---|
 |1|강사소개,OT, 에디터사용방법 html 소개,브라우저의이해,웹접근성,웹표준의 이해. 웹에 대한 전반적인 작동원리, 웹표준과 접근성, 웹서버 등록, dothome 를 이용한 본인웹사이트 생성, 웹문서와 브라우저의 이해|
 |2|FTP 프로그램 설치, 웹 호스팅,웹페이지기본구조. 태그의 기본 작성법, 주석처리,마크업기본규칙,문자인코딩, html 엔티티. Html 요소와 html 기본 문법의 이해, 메타태그의이해 |
@@ -25,7 +25,7 @@ overflow: hidden
 |12 |구조선택자, 동작선택자 ::first-line, ::first-letter, ::before, ::after, ::selection, :target,: disable,  :checked ,:focus, :hover,  :not(selector),:nth-child,:nth-last-child(n)외
 |13 | Es6버전에서 추가된 내용들 , :root, var(), 작명법 (kebab-cased, camelCased), lnb, gnb, css함수들
 | 14 | Borderf-radius, border속성, border속성을 이용한 버튼만들기 및 카드 만들기, 캘러리 만들기
-|15 | 배치속성1 : display (Display:block, display:none , none 과 invisible:hidden의 차이) 
+|15 | 배치속성1- display (display:block, display:none , none 과 invisible:hidden의 차이) 
 |16 |위치속성- position (Position:static, aboulute, relative, 부모와 자식)
 |17 |배치속성2 - float , float속성과 clear:both, :after를 통한 float속성 clear |
 |18 |오디오, 비디오 |<audio> <video>,유튜브에서 가져온 영상 삽입하기 및 페이지에 맞춰 크기변경 |
