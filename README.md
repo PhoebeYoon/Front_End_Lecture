@@ -6,8 +6,12 @@ div {
   border: 2px solid;
   padding: 20px; 
   width: 300px;
-  resize: both;
+ /* resize: both; */
   overflow: auto;
+  
+   resize:horizontal;  
+   /* resize:vertical;  */
+   /* resize:none; */
 }
 </style>
 <div>
