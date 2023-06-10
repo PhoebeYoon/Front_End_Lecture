@@ -1,5 +1,11 @@
 ##### 🍑  Front_End 과정 1단계 
 
+display:-webkit-box    
+-webkit-line-clamp   
+-webkit-box-orient : vertical    
+overflow: hidden   
+
+
 ```html
 <body>
   <section class="card-group">
