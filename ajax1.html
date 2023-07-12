@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" integrity="sha512-3P8rXCuGJdNZOnUx/03c1jOTnMn3rP63nBip5gOP2qmUh5YAdVAvFZ1E+QLZZbC1rtMrQb+mah3AfYW11RUrWA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+  <title>Document</title>
+  <script>
+    $(document).ready(function(){
+      $("#btn").click(function(){
+        $("#test").load("./data.txt", { 
+          Name: "Daniel" , 
+          Lastname : "GilDong" 
+        }, function(){
+         alert("Hi there!")
+    
+        })
+      })
+
+   
+  })
+  </script>
+</head>
+<body>
+  <div id="test">
+    <p>this is the first content</p>
+  </div>
+  <button id="btn">Click to change</button>
+  <div id="demo">
+  </div>
+
+  <!-- 
+   A. 제이쿼리 cdn  설치 
+   https://cdnjs.com/libraries/jquery 에서 코드복사
+
+   B.크롬에서 실행시 크로스브라우저 뭐 그러면서 실행되지 않는다면 
+  1. 크롬아이콘의 속성 
+  2. 바로가기 탭 : 대상 :  "C:\Program Files\Google\Chrome\Application\chrome.exe" --disable-web-security --disable-gpu --user-data-dir=~/tmp
+  뒷부분 추가
+  3. 크롬의 "관리자 권한으로 실행"
+  4. 크롬 주소창에 해당 파일 입력
+  -->
+</body>
+</html>
