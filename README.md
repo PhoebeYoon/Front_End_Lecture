@@ -47,14 +47,17 @@ html 태그는 대소문자를 구분한다.
 
 🔹서치엔진를 위한 키워드를 정의합니다. 
 ```<meta name="keywords" content="HTML, CSS, JavaScript"> ```   
+
 🔹웹페이지에 대한 설명을 정의합니다.  
 ```
 <meta name="description" content="Free Web tutorials for HTML and CSS">
 ```   
 🔹웹페이지에 대한 작성자를 정의합니다. 
-``` <meta name="author" content="이름"> ````   
+``` <meta name="author" content="이름"> ```   
+
 🔹문서를 새로고침하는 시간을 정의할 수 있습니다. 
 ``` <meta http-equiv="refresh" content="30"> ```
+
 
 🔹 웹사이트가 모든 장치에서 잘 보이도록 뷰포트를 설정하는데, width는 장치의 너비를 따르라는 의미이면 두번째부분은 브라우저에 페이지가 처음 로드될때 줌 레벨을 설정하는 것으로 2.0으로 되어 있으면 2개 확대인데 1.0이니까 1배로 보이라는 의미입니다.
 
