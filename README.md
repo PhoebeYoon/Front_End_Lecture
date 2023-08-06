@@ -222,3 +222,5 @@ ImageKit을 사용하면, 체인변환을 이용해서 주요 단일 색상을 �
 
 :peach: 모든 이미지에 lazy load를 적용하지 않는 것이 좋습니다.
 
+참조) https://helloinyong.tistory.com/297
+
