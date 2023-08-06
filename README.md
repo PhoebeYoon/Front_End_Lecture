@@ -201,3 +201,24 @@ js코드는 위에 있는것과 동일합니다.
 
 
 위 예시에서 주목할 점은 lazy loading 관련해서 구현한 자바스크립트 코드가 똑같다는 것입니다. 이벤트 리스너와 Intersection Observer API를 함께 이용해서 구현되어 있습니다. 트릭은 CSS 부분에 있습니다.
+
+:peach: 올바른 image placeholder 사용법
+
+
+placeholder는 실제 이미지가 로딩될 때까지 해당 이미지 자리에 대신 표시할 요소를 말합니다. 보통 개발자들은 이미지의 단색 이미지를 사용하거나 모든 이미지에다가 대체할 특정 이미지를 넣는 방식으로 구현합니다.
+이전 예시 코드로 동작하던 lazy code를 본다면, placeholder로 밝은 회색을 사용하고 있습니다 특정 색상을 placeholder로 사용하는 대신, 사용하려는 실제 이미지의 주요한 색상을 이용하는 방법이 있습니다.
+
+이미지의 첫 1x1 픽셀로 스케일을 감소 시키고 해당 픽셀 요소로 placeholder을 채우는 아주 간단한 방식입니다. 
+ImageKit을 사용하면, 체인변환을 이용해서 주요 단일 색상을 얻을 수 있습니다. 
+
+```
+<!-- Original image at 400x300 -->
+<img src="https://ik.imagekit.io/demo/img/image4.jpeg?tr=w-400,h-300" alt="original image" />
+
+<!-- Dominant colour image with same dimensions -->
+<img src="https://ik.imagekit.io/demo/img/image4.jpeg?tr=w-1,h-1:w-400,h-300" alt="dominant color placeholder" />
+
+```
+
+:peach: 모든 이미지에 lazy load를 적용하지 않는 것이 좋습니다.
+
