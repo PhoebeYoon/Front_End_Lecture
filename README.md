@@ -30,4 +30,22 @@ writing-mode의 속성은
 </style>
 <p>Some text with a span element with a <span class="test1"> alphabet</span> writing-mode.</p>
 ```
- 
+
+ ```
+<style>
+    body {
+      background-color:#E7E9EB;
+    }
+    #myDIV {
+      height:300px;
+      background-color:#FFFFFF;
+      writing-mode: vertical-lr;
+    }
+    </style>
+<body>
+  <div id="myDIV">
+    Check what you can do with the writing-mode property!
+    </div>
+    <!-- 글자가 시작되는 방향을 확인하세요 -->
+</body>
+```
