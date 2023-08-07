@@ -86,7 +86,7 @@
 ```     
 <img width="300" alt="스크린샷 2023-06-10 오후 11 37 27" src="https://github.com/PhoebeYoon/HTML/assets/48478079/ad4c5397-c36a-4985-9361-c2a38ca23adb">
 
-☑️ place-self속성은 flexbox items을 위한 것이지만 두번째 값인 justify-selfsms flexbox와 관련된 항목이 아니므로 무시된다
+☑️ place-self속성은 flexbox items을 위한 것이지만 두번째 값인 justify-self는 flexbox와 관련된 항목이 아니므로 무시된다
 
 
 
