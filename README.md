@@ -1,5 +1,6 @@
 ##### 🍑  Front_End 과정 1단계 
 
+#### writing-mode 와 함께 사용할것
 ```html
 <style>
 body {
