@@ -46,19 +46,25 @@ srcset="logo-100.jpg 1x, logo-150.jpg 1.5x, logo-200.jpg 2x"
 ```
 
 
-
-
-
-
-
-
  sizes="(max-width: 800px) 100vw, 800px" 에서 화면의 너비가 800px보다 작은지 확인하는 것이고 
  두 번째 부분은 미디어 쿼리가 사실인 경우 이미지에 사용할 크기입니다. 이 경우 100vw를 사용하고 있는데, 이는 브라우저가 브라우저 창의 전체 너비를 기준으로 이미지 크기를 선택하기를 원한다는 것을 의미합니다.
 
 
+```
+화면에 브라우저의 사이즈와 ratio 출력
+<script>
+  window.addEventListener("resize", updateText);
+  updateText()
+function updateText(){
+const data=document.querySelector("#data")
+data.textContent=`width : ${window.innerWidth} , Ratio :${ window.devicePixelRatio }`
+}
+// 개발자도구에서 반응형보기 끄고 줌아웃해서 ratio:1 로 맞춘후 
+// 화면사이즈 조절하고 리플레시 한다
+</script>
 
+```
 
- 
 
 srcset 다음에 size 라는 속성이 있습니다. 그러나 이 속성은 매우 강력하여 사용에 주의해야 합니다.  
 그래서 여러개의 미디어 쿼리를 사용할 경우 미디어쿼리를 기술하는 순서가 중요합니다. 그래서 작은것부터 큰것 순으로 기술하는 것도 방법입니다.
