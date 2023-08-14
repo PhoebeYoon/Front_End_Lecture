@@ -67,7 +67,7 @@ a[href$=".org"] {
 </ul>
 ```
 그외,
-```
+```html
 /* All divs with a `lang` attribute are bold. */
 div[lang] {
   font-weight: bold;
