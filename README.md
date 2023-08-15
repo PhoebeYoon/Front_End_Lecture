@@ -27,6 +27,11 @@
 쉼표 (,)를 통해  같은 속성을 공유할 수 있습니다. 
 
 
+> css에서 : 와 :: 의 역사
+> 역사적으로 가상클래스와 가상요소는 모두 1개의 콜론만을 사용했습니다.
+> 그러다가 :: 표기법은 이 두개를 구별하기 위한 방법으로 css3에 소개되었습니다. 단일 콜론만 사용하는 것은 권장되지 않지만 브라우저는 여전히 이 2개를 모두 호환하여 표현하고 있습니다. 
+
+
 
 ### 5. 가상(pseudo) 클래스 (class) 와 가상(pseudo) 요소 (element)  
 CSS에는 가상 요소(:pseudo-element)와 가상 클래스(:pseudo-class)가 있다. 
@@ -56,7 +61,7 @@ CSS에는 가상 요소(:pseudo-element)와 가상 클래스(:pseudo-class)가 �
 ::after   
 
 
-:peach: [List of 가상엘리먼트] (https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-elements#alphabetical_index)
+:peach: [List of 가상엘리먼트](https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-elements#alphabetical_index)
 
 ### 6.함수같은 클래스
 
@@ -82,7 +87,7 @@ h2:has(+ p, + ul.red) {
 }
 이것은 <h2> 바로 다음태그가 <p> 또는 <ul class="red"> 일때를 말한다. 
 ```
-참조 : 
+:peach: 참조 
 - https://www.freecodecamp.org/news/the-difference-between-pseudo-classes-and-elements-in-css/  
 - https://developer.mozilla.org/en-US/docs/Web/CSS/Selector_list#selector_list
 
