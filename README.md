@@ -34,7 +34,7 @@
 
 
 ### 5. 가상(pseudo) 클래스 (class) 와 가상(pseudo) 요소 (element)  
-CSS에는 가상 요소(:pseudo-element)와 가상 클래스(:pseudo-class)가 있다. 
+CSS에는 가상 요소(:pseudo-element)와 가상 클래스(:pseudo-class)가 있다. ('수도' 라고 읽읍시다)
 
 가상클래스는 엘리먼트의 특별한 **상태**를 정의하며, 이것들을 사용해서 html 문서의 수정 없이 CSS만으로 디자인적 요소를 추가할 수 있다. 
 
