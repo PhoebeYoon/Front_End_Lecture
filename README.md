@@ -46,6 +46,8 @@ CSS에는 가상 요소(:pseudo-element)와 가상 클래스(:pseudo-class)가 �
 :first-child : li 중 첫번쩨 요소에 해당 CSS를 적용  
 :last-child : li 중 마지막에 해당 CSS를 적용   
 :nth-child(n) : li 중 n번쩨 요소에 해당 CSS를 적용   
+
+:peach: [50가지 가상 클래스 확인](https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes#alphabetical_index)
  
 가상요소는 예를들면,    
 ::first-line   
@@ -53,6 +55,24 @@ CSS에는 가상 요소(:pseudo-element)와 가상 클래스(:pseudo-class)가 �
 ::before   
 ::after   
 
+
+### 6.함수같은 클래스
+
+:is()  
+:not()   
+:where()   
+:has()   
+
+예)
+```css
+span,
+div { border: red 2px solid; }
+또는
+:is(span, div) {
+  border: red 2px solid; }
+
+위의 2개는 동일하다
+```
 
 
 
