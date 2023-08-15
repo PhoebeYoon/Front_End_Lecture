@@ -1,6 +1,10 @@
 ##### 🍑  Front_End 과정 1단계 
 
 
+
+- mdn https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors/Attribute_selectors
+
+
 - [attr]  attr이라는 이름의 특성을 가진 요소를 선택합니다.
 
 - [attr=value]
