@@ -56,7 +56,9 @@ CSS에는 가상 요소(:pseudo-element)와 가상 클래스(:pseudo-class)가 �
 ::after   
 
 
-### 6.함수같은 클래스
+:peach: [List of 가상엘리먼트] (https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-elements#alphabetical_index)
+
+### 6.함수같은 클래스
 
 :is()  
 :not()   
@@ -72,7 +74,97 @@ div { border: red 2px solid; }
   border: red 2px solid; }
 
 위의 2개는 동일하다
+```  
+
+```css
+h2:has(+ p, + ul.red) {
+  font-style: italic;
+}
+이것은 <h2> 바로 다음태그가 <p> 또는 <ul class="red"> 일때를 말한다. 
 ```
+참조 : 
+- https://www.freecodecamp.org/news/the-difference-between-pseudo-classes-and-elements-in-css/  
+- https://developer.mozilla.org/en-US/docs/Web/CSS/Selector_list#selector_list
+
+
+
+
+```html
+:not() 예제  
+<style>
+p:not(.irrelevant) {
+  font-weight: bold;
+}
+
+p > strong,
+p > b.important {
+  color: crimson;
+}
+
+p > :not(strong, b.important) {
+  color: darkmagenta;
+}
+</style>
+
+<p>
+  <b>Mars</b> is one of the most Earth-like planets. <b>Mars</b> day is almost the same as an Earth day, only
+  <strong>37 minutes</strong> longer.
+</p>
+
+<p class="irrelevant">
+  <b class="important">NASA</b>'s Jet <del>Momentum</del> Propulsion Laboratory is designing mission concepts to survive
+  the <b>Venus</b> extreme temperatures and atmospheric pressure.
+</p>
+
+```
+
+```html
+<style>
+.fancy {
+  text-shadow: 2px 2px 3px gold;
+}
+
+/* <p> elements that don't have a class `.fancy` */
+p:not(.fancy) {
+  color: green;
+}
+
+/* Elements that are not <p> elements */
+body :not(p) {
+  text-decoration: underline;
+}
+
+/* Elements that are not <div>s or `.fancy` */
+body :not(div):not(.fancy) {
+  font-weight: bold;
+}
+
+/* Elements that are not <div>s or `.fancy` */
+body :not(div, .fancy) {
+  text-decoration: overline underline;
+}
+
+/* Elements inside an <h2> that aren't a <span> with a class of `.foo` */
+h2 :not(span.foo) {
+  color: red;
+}
+</style>
+
+<p>I am a paragraph.</p>
+<p class="fancy">I am so very fancy!</p>
+<div>I am NOT a paragraph.</div>
+<h2>
+  <span class="foo">foo inside h2</span>
+  <span class="bar">bar inside h2</span>
+</h2>
+
+```
+
+:peach: https://developer.mozilla.org/en-US/docs/Web/CSS/:not  (페이지 하단)
+
+
+
+
 
 
 
