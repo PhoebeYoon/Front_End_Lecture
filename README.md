@@ -38,7 +38,6 @@ article[data-columns='4'] {
 
 #### :peach: 대소문자 구분하지 않기 (i 옵션 사용하기)
 
-
 ```
 <style>
  .message { width: 200px; background-color: lightblue;
@@ -84,6 +83,17 @@ article[data-columns='4'] {
 
 ```
 
+```
+<style>
+[data-emoji]::before {
+  content:attr(data-emoji);
+  margin-right:5px;
+}
+/* ✅가 리턴된다 */
+</style>
+<div data-emoji="✅"></div>
+```
+
 
 #### :peach: Java Script에서 커스텀 데이터 속성에 접근하기
 
@@ -93,8 +103,8 @@ article[data-columns='4'] {
  section.dataset.columns // "3" 
  section.dataset.indexNumber // "12314" 
  section.dataset.parent // "cars"
-
 ```
 
+[참조](https://css-tricks.com/a-complete-guide-to-data-attributes/ )
 
 
