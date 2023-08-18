@@ -1,7 +1,7 @@
 ##### 🍑  Front_End 과정 1단계 
 
 
-#### :peach: 데이터 속성 지정하기 
+#### 1.  데이터 속성 지정하기 
 data-속성명 으로 html 태그안에 아래와 같이 넣어준다.
 이때 중요한것은 속성명은 절대 camelCase  가 아닌 kebab-case 로 작성되어야한다.
 
@@ -9,7 +9,7 @@ data-속성명 으로 html 태그안에 아래와 같이 넣어준다.
 이렇게 속성을 저장하였다면, 반대로 event listener 로 가져오는 방법도 알아야한다
 const data = e.target.dataset
 
-#### :peach: 데이터 속성에 접근하기
+#### 2. 데이터 속성에 접근하기
 
 데이터 속성은 순 HTML속성이기 때문에 앞서 말했듯 CSS에서도 접근이 가능하다.
 ```html
@@ -78,14 +78,7 @@ body {  margin: 1rem;}
 </div>
 ```
 
-
-
-
-
-
-
-
-#### :peach: 대소문자 구분하지 않기 (i 옵션 사용하기)
+#### 3. 대소문자 구분하지 않기 (i 옵션 사용하기)
 
 ```
 <style>
@@ -144,7 +137,7 @@ body {  margin: 1rem;}
 ```
 
 
-#### :peach: Java Script에서 커스텀 데이터 속성에 접근하기
+#### 4. JavaScript에서 커스텀 데이터 속성에 접근하기
 
 값을 읽기 위해서는 getAttribute()를 사용하면 된다.
 ```js
