@@ -35,6 +35,55 @@ article[data-columns='4'] {
 
 ```
 
+```html
+<style>
+[data-columns] {
+  display: grid;  grid-gap: 1rem;  padding: 1rem;
+  margin: 0 0 1rem 0;}
+
+[data-columns] > div {
+  height: 100px;  background: white; }
+
+[data-columns="2"] {
+  background: #64B5F6;  grid-template-columns: repeat(2, 1fr);}
+
+[data-columns="3"] {
+  background: #9CCC65;  grid-template-columns: repeat(3, 1fr);}
+
+[data-columns="4"] {
+  background: #FFB74D;  grid-template-columns: repeat(4, 1fr);}
+body {  margin: 1rem;}
+</style>
+<div data-columns="2">
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+</div>
+
+<div data-columns="3">
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+</div>
+
+<div data-columns="4">
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+</div>
+```
+
+
+
+
+
+
+
 
 #### :peach: 대소문자 구분하지 않기 (i 옵션 사용하기)
 
