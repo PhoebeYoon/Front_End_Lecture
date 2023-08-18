@@ -34,7 +34,11 @@ article[data-columns='4'] {
 </section>
 
 ```
+
+
 #### :peach: 대소문자 구분하지 않기 (i 옵션 사용하기)
+
+
 ```
 <style>
  .message { width: 200px; background-color: lightblue;
