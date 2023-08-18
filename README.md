@@ -34,6 +34,52 @@ article[data-columns='4'] {
 </section>
 
 ```
+#### :peach: 대소문자 구분하지 않기 (i 옵션 사용하기)
+```
+<style>
+ .message { width: 200px; background-color: lightblue;
+    color:darkblue; padding:10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    margin-left: auto;
+    margin-right: auto;  
+    position: relative;
+  }
+.message::after{
+  content: "";
+  display: block;
+  position: absolute;
+  left:-18px; bottom: 1px;
+  width: 0;height: 0;
+  border-style: solid;
+  border-width: 10px 20px 10px 0;
+  border-color: transparent lightblue transparent transparent;
+}
+.message.person-2 {
+  background-color: lightpink;
+  color:darkred
+}
+.message.person-2::after {
+  border-width: 10px 0 10px 20px;
+  border-color: transparent  transparent transparent lightpink;
+  left:auto; right:-18px;
+}
+
+.message[data-text*="hello" i]::before{
+  content: "👋";
+  display: inline-block;
+  margin-right: 5px;
+}
+/*  */
+</style>
+
+ <div class="message person-1" data-text="Hello, how's it going?">Hello, how's it going?</div>
+  <div class="message person-1" data-text="Are you there?">Are you there?</div>
+  <div class="message person-2" data-text="Oh, HELLO there!">Oh, HELLO there!</div>
+  <div class="message person-1" data-text="Welp, bye.">Welp, bye.</div>
+
+```
+
 
 #### :peach: Java Script에서 커스텀 데이터 속성에 접근하기
 
