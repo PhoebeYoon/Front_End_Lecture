@@ -84,4 +84,5 @@ section{ height: 100vh;
 
 
 
-참조 : https://www.youtube.com/watch?v=ytl6TrroGis&t=143s
+참조 :  https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-snap-type   
+https://www.youtube.com/watch?v=ytl6TrroGis&t=143s
