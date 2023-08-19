@@ -14,7 +14,10 @@ scroll-snap-type: block;
 scroll-snap-type: inline;   
 scroll-snap-type: both;   
 
-/* Optional mandatory (형용사, 법에 정해진, 의무적인) | proximity (명사, 거리,시간상으로 가까움)*/
+/* Optional mandatory (형용사, 법에 정해진, 의무적인) | proximity (명사, 거리,시간상으로 가까움) */
+> 그러니까 proximity는 거리상으로 50%가 넘어야 다음 페이지로 스냅되어서 넘어가고   
+> mandatory는 조금만 당겨도 다음 페이지로 넘어간다로 생각하자
+
 scroll-snap-type: x mandatory;   
 scroll-snap-type: y proximity;   
 scroll-snap-type: both mandatory;   
@@ -79,7 +82,7 @@ section{ height: 100vh;
     </section>
   </div>
 
-
+<!-- 위의 예제에서 다음 페이지로 넘어갈때 중간이후에 페이지가 서서히 멈추면서 어떻게 스냅이 되는지 확인해 보자 -->
 ```
 
 
