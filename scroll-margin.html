@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#container {
+  scroll-snap-type: both mandatory;
+  width: 50%;
+  aspect-ratio: 1/1;
+  margin: 30px auto;
+  background-color: #fff;
+  white-space: nowrap;
+  overflow-x: scroll;
+  overflow-y: scroll;
+  border: solid black 2px;
+}
+#container > div {
+  display: inline-block;
+  height: 85%;
+  border-radius: 5%;
+  aspect-ratio: 1/1;
+  scroll-snap-align: end;
+  scroll-margin: 0 10px 30px 0;
+}
+
+.green    { background-color: lightgreen; }
+.pink     { background-color: lightpink; }
+.blue     { background-color: lightblue; }
+.yellow   { background-color: yellow; }
+.grey     { background-color: lightgray; }
+</style>
+</head>
+<body>
+
+<h3>CSS scroll-margin property, at bottom and right.</h3>
+<p>Scroll towards the middle of the container, let go, and see how the scroll-margin creates 30px distance from the bottom of the element to the container, and 10px distance from right side of the element to the container.</p>
+
+<div id="container">
+  <div class="green"></div>
+  <div class="pink"></div>
+  <div class="yellow"></div>
+  <div class="blue"></div>
+  <div class="grey"></div>
+  <div class="pink"></div>
+  <br>
+  <div class="pink"></div>
+  <div class="blue"></div>
+  <div class="grey"></div>
+  <div class="yellow"></div>
+  <div class="pink"></div>
+  <div class="green"></div>
+  <br>
+  <div class="green"></div>
+  <div class="pink"></div>
+  <div class="yellow"></div>
+  <div class="blue"></div>
+  <div class="grey"></div>
+  <div class="pink"></div>
+  <br>
+  <div class="pink"></div>
+  <div class="yellow"></div>
+  <div class="blue"></div>
+  <div class="grey"></div>
+  <div class="pink"></div>
+  <div class="green"></div>
+  <br>
+  <div class="grey"></div>
+  <div class="blue"></div>
+  <div class="yellow"></div>
+  <div class="pink"></div>
+  <div class="green"></div>
+  <div class="pink"></div>
+  <br>
+  <div class="green"></div>
+  <div class="pink"></div>
+  <div class="blue"></div>
+  <div class="yellow"></div>
+  <div class="pink"></div>
+  <div class="grey"></div>
+</div>
+
+</body>
+</html>
