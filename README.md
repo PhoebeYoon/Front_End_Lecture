@@ -1,5 +1,31 @@
 ##### 🍑  Front_End 과정 1단계 
 
+- scroll-snap-align : none, start, end, block inline, initial, inherit
+- scroll-snap-stop : normal, always, initial, inherit
+- scroll-snap-type : 아래에  
+
+
+### 1. scroll-snap-type   
+기본 values :   
+scroll-snap-type: none;   
+scroll-snap-type: x;  
+scroll-snap-type: y;   
+scroll-snap-type: block;   
+scroll-snap-type: inline;   
+scroll-snap-type: both;   
+
+/* Optional mandatory (형용사, 법에 정해진, 의무적인) | proximity (명사, 거리,시간상으로 가까움)*/
+scroll-snap-type: x mandatory;   
+scroll-snap-type: y proximity;   
+scroll-snap-type: both mandatory;   
+
+/* Global values */   
+scroll-snap-type: inherit;   
+scroll-snap-type: initial;  
+scroll-snap-type: revert;   
+scroll-snap-type: revert-layer;  
+scroll-snap-type: unset;   
+ 
 
 
 
