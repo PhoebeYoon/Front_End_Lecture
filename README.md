@@ -10,7 +10,7 @@
 
 ### align-items vs align-content 차이   
 align-items은 한 줄을 기준으로 하고
-align-content는 두 줄부터 사용하는데 의미가 있다.  
+align-content는 두 줄부터 사용해야 하며 flex-wrap: wrap으로 되어 있어야 한다.  
 ```html
 <style>
     .flex { 
