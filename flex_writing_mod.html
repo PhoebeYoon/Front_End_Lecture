@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .flex { 
+    display: flex; 
+   gap:2rem;
+   flex-wrap: wrap;
+   /* 
+   1. 
+   writing-mode: vertical-lr;
+   writing-mode: horizontal-tb; */
+
+    writing-mode: vertical-rl;
+    align-items: flex-end;
+    
+  /* 3. */
+  writing-mode: horizontal-tb;
+    }
+    .box { height: 200px; font-size: 5rem;
+    background-color: hsl(200,100%, 80%);
+      border:3px solid hsl(200,100%, 50%);
+      display: flex;
+      width: 200px;
+  }
+
+  /* 2. */
+  .box:nth-child(2) {
+    background-color: hsl(50,100%, 80%);
+    width: 80px; height: 80px;
+  }
+  </style>
+</head>
+<body>
+  <div class="flex">
+    <div class="box">1</div>
+    <div class="box">2</div>
+    <div class="box">3</div>
+    <div class="box">4</div>
+    <div class="box">5</div>
+  </div>
+</body>
+</html>
