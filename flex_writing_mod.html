@@ -9,15 +9,16 @@
     display: flex; 
    gap:2rem;
    flex-wrap: wrap;
-   /* 
-   1. 
+   flex-direction: column;  /* 3. */
+   
+   /* 1. 
    writing-mode: vertical-lr;
    writing-mode: horizontal-tb; */
 
     writing-mode: vertical-rl;
     align-items: flex-end;
-    
-  /* 3. */
+
+  /* 3.  이후에는 flex-direction을 바꿔본다.*/
   writing-mode: horizontal-tb;
     }
     .box { height: 200px; font-size: 5rem;
