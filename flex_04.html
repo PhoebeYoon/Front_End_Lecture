@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .flex { display: flex; 
+     flex-direction: row;
+     height: 500px;
+     border: 5px solid;
+     align-items: center;
+     /* flex-wrap: wrap; */
+
+    }
+    .box { height: 200px; font-size: 5rem;
+      background-color: hsl(200,100%, 80%);
+      border:3px solid hsl(200,100%, 50%);
+      flex-grow: 1;
+      width: 200px;
+  }
+  .big { flex-grow:2; 
+   background-color:hsl(240,100%, 80%);  
+  /* 브라우저를 넓히면 너비가 2개 가량씩 넓어지는 것을 확인할 수 있다 */
+  }
+  </style>
+</head>
+<body>
+  <div class="flex">
+    <!-- div.box{1}*5  이렇게해도 된다-->
+    <div class="box">1</div>
+    <div class="box">2</div>
+    <div class="box big">3</div>
+    <div class="box">4</div>
+    <div class="box">5</div>
+  </div>
+</body>
+</html>

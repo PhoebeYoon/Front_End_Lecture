@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .flex { display: flex; 
+     flex-direction: row;
+     height: 500px;
+     border: 5px solid;
+     align-items: center;
+     justify-content: center;
+    }
+
+    .box { font-size: 5rem;
+      background-color: hsl(200,100%, 80%);
+      border:3px solid hsl(200,100%, 50%);
+      flex-basis: 100px;
+  }
+.mealone { 
+  background-color: hsl(100,100%, 80%); 
+  flex-basis: 150px;
+}
+ 
+
+  </style>
+</head>
+<body>
+  <!-- 숫자들을 가운데 정렬해보자 -->
+  <div class="flex">
+ 
+    <div class="box">1</div>
+    <div class="box">2</div>
+    <div class="box mealone">3</div>
+    <div class="box">4</div>
+    <div class="box">5</div>
+  </div>
+</body>
+</html>

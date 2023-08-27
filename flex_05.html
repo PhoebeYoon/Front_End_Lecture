@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .flex { display: flex; 
+     flex-direction: row;
+     height: 500px;
+     border: 5px solid;
+     align-items: center;
+    }
+    .box { height: 200px; font-size: 5rem;
+      background-color: hsl(200,100%, 80%);
+      border:3px solid hsl(200,100%, 50%);
+      flex-grow: 1;
+      width: 200px;
+
+      /* 아래와 같이 justify-content,align-items 만 해서는 가운데, 가운데 정렬이 되지 않고,  display:flex 까지 넣어줘야 한다   */
+     justify-content: center;
+      align-items: center;
+      display: flex;
+
+     /* 아래와 같은 방식으로도 정렬할 수 있긴하다
+      text-align: center;
+      line-height: 200px; */
+  }
+  .big { flex-grow:2; 
+   background-color:hsl(240,100%, 80%);  
+
+  }
+  </style>
+</head>
+<body>
+  <!-- 숫자들을 가운데 정렬해보자 -->
+  <div class="flex">
+ 
+    <div class="box">1</div>
+    <div class="box">2</div>
+    <div class="box big">3</div>
+    <div class="box">4</div>
+    <div class="box">5</div>
+  </div>
+</body>
+</html>
