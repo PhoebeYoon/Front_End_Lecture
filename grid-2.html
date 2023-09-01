@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .grid-container { 
+    background-color: gold;
+    display: grid;
+    /* grid-template-columns: 2fr 1fr 1fr; */
+    /* grid-template-columns: 300px 1fr 1fr; */
+    /* grid-template-columns: 500px 1fr 2fr */
+
+    /* grid-template-columns: 1fr 1fr 1fr; */
+    /* grid-template-columns: repeat(3, 1fr) */
+    grid-template-columns: 50px repeat(4, 1fr) 100px;
+    }
+    .grid-container > div {
+     border:1px solid;
+     font-size: 30px;
+     padding:10px;
+    }
+
+/*  fr단위 : 그리드에서 사용하는 단위로 그리드컨테이너에 남아 있는 사용 가능한 공간의 일정비율을 나타낸다 */
+
+  </style>
+</head>
+<body>
+<div class="grid-container">
+  <div>1</div>
+  <div>2</div>
+  <div>3</div>
+  <div>4</div>
+  <div>5</div>
+  <div>6</div>
+</div>
+</body>
+</html>
