@@ -22,6 +22,18 @@ ctx.strokeRect(100,200, 150,150)
 
 //clearRect(0)
 ctx.clearRect(25,25, 140,90)
+
+// fillText()
+ctx.font= "20px Arial"
+ctx.fillStyle="magenta";
+ctx.fillText("Nice to see you", 400,500)
+
+// stokeText()
+ctx.lineWidth=1;
+ctx.fillStyle="orange";
+// ctx.fillText('Are you with me', 400,100)
+ctx.strokeText('Are you with me', 400,100)
+
     </script>
 ```
 
