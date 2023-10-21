@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {margin: 0; box-sizing: border-box;}
+        body { background-color: #333; color:white;
+            display: flex; align-items: center;
+            justify-content: center; 
+            flex-direction: column;
+        min-height: 100vh; }
+      #canvas { background-color: #f0f0f0; border-radius: 5pxs;}
+    </style>
+</head>
+<body>
+    <h1>Canvas Drawing</h1>
+    <canvas id="canvas" width="600"  height="600"> </canvas>
+    <script>    
+let canvas =  document.querySelector('canvas') 
+const ctx = canvas.getContext('2d')
+    
+//fillRect()
+ctx.fillStyle="red"
+ctx.fillRect(20,20,100,100)
+ctx.fillStyle="blue"
+ctx.fillRect(130,20, 150,100)
+
+
+// strokeRect()
+ctx.lineWidth =5;
+ctx.strokeStyle='green'
+ctx.strokeRect(100,200, 150,150)
+
+//clearRect(0)
+ctx.clearRect(25,25, 140,90)
+
+// fillText()
+ctx.font= "20px Arial"
+ctx.fillStyle="magenta";
+ctx.fillText("Nice to see you", 400,500)
+
+// stokeText()
+ctx.lineWidth=1;
+ctx.fillStyle="orange";
+// ctx.fillText('Are you with me', 400,100)
+ctx.strokeText('Are you with me', 400,100)
+    </script>
+</body>
+</html>
