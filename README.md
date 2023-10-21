@@ -33,8 +33,29 @@ ctx.lineWidth=1;
 ctx.fillStyle="orange";
 // ctx.fillText('Are you with me', 400,100)
 ctx.strokeText('Are you with me', 400,100)
+</script>
+```  
+위의 태그 그대로 사용한다.   
+```html
+ctx.beginPath()
+ctx.moveTo(50,50)
+ctx.lineTo(150,50)
+ctx.lineTo(150,150)
+ctx.lineTo(50,150)
 
-    </script>
+//ctx.lineTo(50,50) 이렇게 첫번째 좌표로 돌아가는대신 closePath()를 한다
+ctx.closePath()
+
+// ctx.fillStyle="pink"
+// ctx.strokeStyle="blue"
+// ctx.lineWidth="3"
+
+ctx.fill()  // 특별히 지정하지 않으면 검정색으로 칠해짐
+ctx.stroke();
 ```
+
+
+
+
 
 
