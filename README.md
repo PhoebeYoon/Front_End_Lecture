@@ -80,6 +80,43 @@ ctx.fill();
 
 ```
 
+```js
+
+// arc(x, y, radius, startAngle, endAngle)
+// arc(x, y, radius, startAngle, endAngle, counterclockwise)
+
+ctx.beginPath()
+ctx.arc(75, 75, 50, 0, Math.PI*2, true)
+ctx.moveTo(110, 75)
+ctx.arc(75, 75, 35, 0, Math.PI, false)
+
+ctx.moveTo(65,65)
+ctx.arc(60,65,5,0, Math.PI *2, true)
+ctx.moveTo(96, 65)
+ctx.arc(90,65,5,0, Math.PI *2, true)
+ctx.stroke();
+
+
+// Big face
+ctx.beginPath()
+const centerX = canvas.width/2
+const centerY = canvas.height/2
+
+ctx.arc(centerX, centerY, 200, 0, Math.PI*2, true)
+
+ctx.moveTo(centerX +100, centerY)  // mouse
+ctx.arc(centerX, centerY, 100, 0, Math.PI , false)
+
+ctx.moveTo(centerX -60, centerY -80) //left eye
+ctx.arc(centerX -80, centerY-80, 20, 0 , Math.PI*2)
+
+ctx.moveTo(centerX+100, centerY -80) // right eye
+ctx.arc(centerX +80, centerY-80, 20, 0 , Math.PI*2)
+
+ctx.stroke()
+
+```
+
 
 
 
