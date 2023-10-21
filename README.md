@@ -35,7 +35,7 @@ ctx.fillStyle="orange";
 ctx.strokeText('Are you with me', 400,100)
 </script>
 ```  
-위의 태그 그대로 사용한다.   
+> 위의 태그 그대로 사용한다.   
 ```html
 ctx.beginPath()
 ctx.moveTo(50,50)
@@ -53,6 +53,31 @@ ctx.closePath()
 ctx.fill()  // 특별히 지정하지 않으면 검정색으로 칠해짐
 ctx.stroke();
 ```
+> 위의 태그 그대로 사용한다.
+```html
+tx.beginPath()
+ctx.moveTo(50,50)
+ctx.lineTo( 150, 50);
+ctx.lineTo(100,200);
+ctx.lineTo(50,50);
+ctx.fillStyle="coral"
+ctx.fill()
+
+ctx.beginPath()
+ctx.moveTo(200,50)
+ctx.lineTo(150, 200)
+ctx.lineTo(250, 200)
+ctx.closePath()
+ctx.stroke();
+
+ctx.beginPath();
+ctx.rect(300,50, 150, 100)
+ctx.fillStyle="teal"
+ctx.fill();
+
+```
+
+
 
 
 
