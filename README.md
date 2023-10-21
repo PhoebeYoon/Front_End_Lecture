@@ -54,7 +54,9 @@ ctx.fill()  // 특별히 지정하지 않으면 검정색으로 칠해짐
 ctx.stroke();
 ```
 > 위의 태그 그대로 사용한다.
-```html
+
+```html   
+// Triangle
 tx.beginPath()
 ctx.moveTo(50,50)
 ctx.lineTo( 150, 50);
@@ -70,6 +72,7 @@ ctx.lineTo(250, 200)
 ctx.closePath()
 ctx.stroke();
 
+// Rectangle
 ctx.beginPath();
 ctx.rect(300,50, 150, 100)
 ctx.fillStyle="teal"
