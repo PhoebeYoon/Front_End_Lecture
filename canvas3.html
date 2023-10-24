@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {margin: 0;}
+        canvas { border:1px solid;
+             box-shadow: 1px 1px 3px rgba(0,0,0,0.3);}
+        img { visibility: hidden;}
+        div#score { font-size: 2em; }
+    </style>
+</head>
+<body>
+    <h1>그림을 그려봅시다</h1>
+    <img src="../bar_transparent.png" id="source" >
+    <div id="score"></div>
+    <canvas id="draw" width="800" height="600"></canvas>
+
+   
+<script>
+const canvas = document.querySelector('#draw');
+const ctx = canvas.getContext('2d');
+const image = document.getElementById('source')
+let score= document.querySelector("#score")
+let point =0;
+const circle = {
+    x : 200,
+    y:  200,
+    size:30,
+    dx : 5,
+    dy : 4
+}
+const player ={
+    w:100,
+    h:26,
+    speed :5,
+    x:30, y:300, dx:0, dy:0
+}
+
+function drawCircle(){
+    ctx.beginPath();
+    ctx.arc(circle.x, circle.y, circle.size, 0, Math.PI*2)
+    ctx.fillStyle="red"
+    ctx.fill();
+}
+
+function drawPlayer(){
+      ctx.drawImage(image, player.x, player.y, player.w, player.h )
+}
+
+
+function keyDown(e){
+//    console.log(e.key)
+    if(e.key ==="ArrowRight" || e.key ==="Right") {
+        moveRight()
+    }
+    if(e.key ==="ArrowLeft" || e.key ==="Left") {
+        moveLeft()
+    }
+    if(e.key ==="ArrowDown" || e.key ==="Down") {
+        moveDown()
+    }
+    if(e.key ==="ArrowUp" || e.key ==="Up") {
+        moveUp()
+    }
+
+}
+
+function keyUp(e){ 
+if( 
+    e.key =="Rigth" || 
+    e.key =="ArrowRight" ||
+    e.key =="ArrowLeft" ||
+    e.key =="Left" ||
+    e.key =="ArrowDown" ||
+    e.key ==="Down" ||
+    e.key ==="ArrowUp" || 
+    e.key ==="Up"
+){
+    player.dx=0;
+    player.dy=0
+}
+
+}
+
+  function moveRight(){
+    player.dx  = player.speed;
+  }
+
+  
+  function moveLeft(){
+    player.dx  = -player.speed;
+  }
+
+
+  function moveDown(){
+    player.dy  = player.speed;
+  }
+
+  
+  function moveUp(){
+    player.dy  = -player.speed;
+  }
+
+  function newPos(){
+    player.x += player.dx;
+    player.y += player.dy;
+    detectWalls()
+}
+
+function detectWalls(){
+    if(player.x <0) { player.x =0}
+    if(player.x + player.w >  canvas.width) { player.x = canvas.width - player.w}
+    if(player.y < 0){ player.y =0}
+    if(player.y + player.h > canvas.height) { player.y = canvas.height - player.h}
+}
+
+
+
+
+function update(){
+     ctx.clearRect(0, 0, canvas.width, canvas.height);
+     drawCircle();
+     drawPlayer();
+   
+     circle.x += circle.dx; // x축 위치바꾸기
+     circle.y += circle.dy; // y축 위치바꾸기
+     newPos();
+    // player.x += player.dx;
+    // player.y += player.dy;
+    
+     if(   ( circle.x + circle.size > canvas.width) || ( circle.x -circle.size)< 0) {
+        circle.dx *= -1;
+    }
+
+    if(   ( circle.y + circle.size > canvas.height) || ( circle.y -circle.size)< 0) {
+        circle.dy *= -1;
+    }
+
+    if( circle.y == player.y) {
+          circle.dy *= -1;
+          point++;
+          score.innerText = " 점수 "+ point; 
+          console.log( "player.y " , player.y , "circle.y", circle.y ,circle.dy)
+    }
+
+  requestAnimationFrame(update) // requestAnimationFrame()는 콜백기능을 사용한다
+}
+
+update();
+document.addEventListener('keydown', keyDown)
+document.addEventListener('keyup', keyUp)
+
+    </script>
+</body>
+</html>
