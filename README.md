@@ -52,6 +52,7 @@ const circle = {
 }
 
 function drawCircle(){
+    ctx.beginPath();
     ctx.arc(circle.x, circle.y, circle.size, 0, Math.PI*2)
     ctx.fillStyle="red"
     ctx.fill();
