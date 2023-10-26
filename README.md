@@ -70,3 +70,35 @@ box.innerHTML=container;
     </script>
 ```
 
+## '달리는 말' 이모티콘 (폰트 활용)  
+
+```html
+    <style>
+@font-face {
+	font-family: Muybridge;
+	src: url(https://www.lorp.org/fonts/MuybridgeGX.woff2);
+}
+
+@keyframes Gallop {
+	from { font-variation-settings: "TIME" 0; }
+	to { font-variation-settings: "TIME" 15; }
+}
+body {
+	font: 320px Muybridge;
+	animation: 0.6s linear infinite Gallop;
+}
+body:hover {  animation-duration: 6s;}
+</style>
+</head>
+<body>
+    🐎
+  </body>
+
+```
+참조 : https://yozm.wishket.com/magazine/detail/1239/    
+https://codepen.io/lorp/pen/PRdNYq/   
+
+
+
+
+
