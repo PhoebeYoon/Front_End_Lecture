@@ -4,12 +4,7 @@
 - https://developer.mozilla.org/
 - http://www.devdic.com/
 
-#### [html & css]
 
-
- 
- 
-#### [자바스크립트]
 
 
  
