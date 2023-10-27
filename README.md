@@ -24,8 +24,7 @@
   outline: var(--b) solid var(--c);
   outline-offset: var(--_o);
   background:  radial-gradient(   circle closest-side,
-      #ECD078 calc(99% - var(--b)),var(--c) calc(100% - var(--b)) 99%,#0000
-     ) var(--_g);
+      #ECD078 calc(99% - var(--b)),var(--c) calc(100% - var(--b)) 99%,#0000 ) var(--_g);
 
    
 
