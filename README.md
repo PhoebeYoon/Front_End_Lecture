@@ -1,7 +1,7 @@
 ##### 🍑  Front_End 과정 1단계 
 
 
-## min() | max()
+## min() | max() | clamp()
 
 min(a, b,...) 함수는 쉼표로 구분된 값 목록에서 가장 작은 값을 속성 값으로 사용합니다
 max(a, b, ...) 함수는 쉼표로 구분된 값 목록에서 가장 큰 값을 속성 값으로 사용합니다
@@ -49,6 +49,12 @@ font-size: max(16px, 4vw);
 cum sequi voluptas assumenda nam dolores dolore a quos possimus </p>
     </div>
 
-
 ```
+clamp(최소, 기준, 최대)의 값을 갖는다  위의 p태그 부분을
+```
+ p {   font-size: clamp(16px, 4vw, 30px);    }
+```
+으로 한 줄로 정리할 수 있다. 만약 clamp() 사용할 수 없다면 ```   font-size: min(max(16px, 4vw), 30px); ``` 로 해결하면 된다
+
+
 
