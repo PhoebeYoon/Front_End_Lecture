@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        /* ::marker { color:teal} */
+        
+        /* ::marker{
+            content:'[' counter(list-item) ']'; 
+            color:crimson;
+            font-weight:bold;
+        } */
+        /* list-item는 따로 설정할 필요없이 list-style-type에서 주어진다 */
+
+        /* li { list-style-type: '😀';
+        padding-left: 1ch; } */
+      li { list-style-type: '★'; }
+      ::marker { color:crimson}
+
+    </style>
+    <!-- <ul>
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+    </ul> -->
+
+      <ol>
+        <li>I am an an ordered list</li>
+        <li>My markers are styled via ::marker</li>
+        <li>The gap size is 1ch</li>
+      </ol>
+</body>
+</html>
