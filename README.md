@@ -47,12 +47,10 @@ body {
 }
   </style>
 <div class="module-jamf" id="module-jamf">
-          <a href="http://synd.co/2DNywdE" class="jamf-container" id="jamf-container" target="_blank" rel="noopener">
+       <a href="http://synd.co/2DNywdE" class="jamf-container" id="jamf-container" target="_blank" rel="noopener">
           <div class="jamf-mover" id="jamf-mover"></div>
-        </a>      
-        <div class="interlude">
-          Does your company use Apple devices? 
-        </div>
+       </a>      
+     <div class="interlude"> 마우스를 움직여 내용을 확인하세요    </div>
 </div>
 <script>
 let container = document.querySelector("#jamf-container");
