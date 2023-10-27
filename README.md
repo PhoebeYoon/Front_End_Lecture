@@ -82,5 +82,7 @@ addEventListener()이벤트를 할당하여 수신한다.
 
 </script>
 ```
+예제발췌 : https://github.com/wesbos/JavaScript30
+
 
 
