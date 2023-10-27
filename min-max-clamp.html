@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+    * { box-sizing: border-box; margin: 0;}
+    :root { --clr-primary:#ee6352;  --clr-body:#333;  --clr-bg:#ddd; }
+    body { 
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        line-height: 1.6;
+        color:var(--clr-body);
+        background: var(--clr-bg);
+    }
+    .content { background: white; 
+    padding: 3em;
+    box-shadow: 0 0 3em rgba(0,0,0,0.15); 
+    /* width: 70%;
+    max-width: 600px; */
+    width: max(60%, 700px);
+}
+    .title { margin: 0 0 0.5em; font-weight: 900; 
+        color:var(--clr-primary)
+    }
+    p { 
+     /* font-size: clamp(16px, 4vw, 30px); */
+     font-size: min(max(16px, 4vw), 30px);
+    }
+    </style>
+    <div class="content">
+        <h2 class="title">A catchy title here</h2>
+        <p >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, cum sequi voluptas assumenda nam dolores dolore a quos possimus esse non fuga provident saepe vero earum aliquam ducimus officiis neque.</p>
+    </div>
+</body>
+</html>
