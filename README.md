@@ -1,6 +1,17 @@
 ##### 🍑  Front_End 과정 1단계 
 
 ## ::marker
+pseudo-elements에서 사용되는 것으로  ul, ol를 통해서 li의 불릿기호를 지정할 수 있다. 
+marker는 폰트에 적용할 수 있는 모든 속성, white-space, color, content 를 이용할 수 있다. 
+
+
+```css
+li::marker {
+content:"+";
+font-size:1.2em;
+
+```
+
 
 ```html
   <style>
