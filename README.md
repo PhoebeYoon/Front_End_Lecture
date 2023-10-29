@@ -102,14 +102,38 @@ const boxParaRule = [...stylesheet.cssRules]  // 1번
 // 5 : CSSStyleRule {selectorText: '.box p', style: CSSStyleDeclaration,~ 
 
 // 1번을 주석처리하고 아래와 같이 바꾼다.
-const boxParaRule = [...stylesheet.cssRules].find( (r)=> { 
-  console.log(r.selectorText)
-})
-// 결과는 클래스명과 태그명이 출력된다 
+const boxParaRule = [...stylesheet.cssRules].find( (r)=> 
+ // console.log(r.selectorText)
+ // 결과는 클래스명과 태그명이 출력된다 
+  r.selectorText ===".box p"
+)
+// .box p 있다면 이것을 boxParaRule에 저장한다.
+console.log( boxParaRule )
 
 
-  </script>
+// 이제 "Border"버튼를 클릭하면 border가 설정되고 , Background 버튼을 클릭하면 배경 ,
+// Text 버턴을 클릭하면 글자가 설정되도록 한다
 
+function setRandomBorder(){
+ const newBorder = `${random(1, 50)}px solid ${randomColor()}`;
+  boxParaRule.style.setProperty('border', newBorder)
+}
+
+function serRandomBgColor(){
+  const newBgColor = randomColor(); 
+  boxParaRule.style.setProperty('background-color', newBgColor)
+}
+
+function setRandomColor(){
+  const newColor = randomColor();
+  boxParaRule.style.setProperty("color", newColor)
+}
+
+borderBtn.addEventListener('click', setRandomBorder)
+bgColorBtn.addEventListener('click', serRandomBgColor)
+colorBtn.addEventListener('click', setRandomColor)
+
+</script>
 ```
 
 
