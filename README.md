@@ -142,7 +142,7 @@ for (let div of document.querySelectorAll('[show-info]')){
 </script>
 
 ```
-
+출처 : https://javascript.info/dom-attributes-and-properties
 
 
 
