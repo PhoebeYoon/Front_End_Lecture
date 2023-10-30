@@ -20,10 +20,11 @@
         .bg { background-color: green;}
     </style>
 <div class="imgs">
-        <img src="https://placehold.co/300x200/orange/white" data-img  id="img-1"  >
-        <img src="https://placehold.co/300x200/gold/000000" data-img  id="img-2">
-        <img src="https://placehold.co/300x200/teal/white" data-img  id="img-3">
-    </div>
+        <img src="https://placehold.co/300x200/orange/white" data-img  id="img-1">
+        <img src="https://placehold.co/300x200/gold/000000"  data-img  id="img-2">
+        <img src="https://placehold.co/300x200/teal/white"   data-img  id="img-3">
+        <!--   data-img 속성은 일괄적으로 가져오기 위해 임의로 만듦.  -->
+</div>
     
     <section class="full-screen-section">
         <h1>full Stack</h1>
