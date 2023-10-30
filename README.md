@@ -46,7 +46,7 @@ borderBtn.addEventListener('click', ()=>{
 ```
 
 위의 내용에서 추가한다.  
-```
+```html
 <style>
 html {
   background: orange;font-family: sans-serif;
