@@ -102,10 +102,25 @@ alert(document.body.id)
 // alert(document.body.something)
 alert(input.type)
 // input에는 type이라는 속성이 존재하여 출력은 checkbox가 나온다
+
 alert(body.type) // body에는 type속성이 없으므로 출력이 안된다 .
 //  속성이 비표준인 경우에는 DOM-property가 존재하지 않기때문이다
     </script>
 ```
+그럼 이런 비표준 속성은 어떻게 접근할 수 있을까?   
+위에서 실행되지 않았던  something를 접근해보자  
+
+``` alert(document.body.getAttribute('something')) ```  이렇게 바꾸어서 접근하면 결과를 출력해준다.    
+
+그러니까 비표준 속성은 아래의 attributes 를 이용하여 접근할 수 있다.
+- elem.hasAttribute(name) – checks for existence.
+- elem.getAttribute(name) – gets the value.
+- elem.setAttribute(name, value) – sets the value.
+- elem.removeAttribute(name) – removes the attribute.
+
+  이런 elem.attribute는 이름과 값을 갖는 built-in 오브젝트 콜렉션이고 이것을 이용해서 접근할 수 있다.
+
+
 
 
 
