@@ -118,7 +118,30 @@ alert(body.type) // body에는 type속성이 없으므로 출력이 안된다 .
 - elem.setAttribute(name, value) – sets the value.
 - elem.removeAttribute(name) – removes the attribute.
 
-  이런 elem.attribute는 이름과 값을 갖는 built-in 오브젝트 콜렉션이고 이것을 이용해서 접근할 수 있다.
+이런 elem.attribute는 이름과 값을 갖는 built-in 오브젝트 콜렉션이고 이것을 이용해서 접근할 수 있다.
+
+### 사용예
+
+```html
+<div show-info="name"></div>
+<div show-info="age"></div>
+
+   <script>
+let user ={
+    name :'Peter',
+    age : 25
+}
+
+let x = document.querySelector('[show-info]')
+console.log(x)
+
+for (let div of document.querySelectorAll('[show-info]')){
+    let field = div.getAttribute('show-info')
+    div.innerHTML = user[field]
+}
+</script>
+
+```
 
 
 
