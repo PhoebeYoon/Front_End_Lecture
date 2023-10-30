@@ -118,10 +118,10 @@ body {  margin: 1rem;}
 /*  */
 </style>
 
- <div class="message person-1" data-text="Hello, how's it going?">Hello, how's it going?</div>
-  <div class="message person-1" data-text="Are you there?">Are you there?</div>
-  <div class="message person-2" data-text="Oh, HELLO there!">Oh, HELLO there!</div>
-  <div class="message person-1" data-text="Welp, bye.">Welp, bye.</div>
+<div class="message person-1" data-text="Hello, how's it going?">Hello, how's it going?</div>
+<div class="message person-1" data-text="Are you there?">Are you there?</div>
+<div class="message person-2" data-text="Oh, HELLO there!">Oh, HELLO there!</div>
+<div class="message person-1" data-text="Welp, bye.">Welp, bye.</div>
 
 ```
 
