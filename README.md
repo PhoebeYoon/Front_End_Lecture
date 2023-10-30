@@ -50,6 +50,10 @@
 
 ```
 ## DOM properties ,HTML attributes 로 일단 이해하자
+
+> Attributes – is what’s written in HTML.   
+> Properties – is what’s in DOM objects.   
+
 ### DOM properties를 이용하여 아래의 내용을 시도해보자
 따라서 DOM 속성과 메서드는 일반 자바스크립트 객체와 동일하게 동작하며, 어떤 value도 가질 수 있습니다. 이것들은 대소문자를 구분하니 주의합니다.
 ```js
