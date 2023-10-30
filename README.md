@@ -19,7 +19,7 @@ div.classList.toggle("visible");
 console.log(div.outerHTML);
 // 변수의 값에 따라 클래스를 toggle 한다
 let i=1;
-div.classList.toggle('visible', i<10)
+div.classList.toggle('visible', i<10) 👋🏻
 console.log('i가 1일때  ',div.outerHTML);
 
 
@@ -29,8 +29,8 @@ div.classList.add('foo','bar','baz')
 div.classList.remove("foo", "bar", "baz");
 
 
-const cls = ["foo", "bar"];
-div.classList.add(...cls)
+const cls = ["foo", "bar"]; 
+div.classList.add(...cls)  👋🏻
 console.log(div.outerHTML)
 div.classList.remove(...cls);
 
