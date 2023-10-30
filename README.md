@@ -18,10 +18,10 @@ article::before {
   content: attr(data-parent);
 }
 article[data-columns='3'] {
-  width: 400px;
+  width: 400px; background-color: #ff0 
 }
 article[data-columns='4'] {
-  width: 600px;
+  width: 600px; background-color: #f00 
 }
 </style>
 
@@ -34,8 +34,23 @@ article[data-columns='4'] {
 </section>
 
 ```
-이렇게 적으면 js에 있는 data-columns의 값에 따라 css가 바뀐다. 
+이렇게하고  article 태그안의 data-columns의 값에 따라 css가 바뀐다.  
 
+##### 위의 내용을  JavaScript에서 커스텀 데이터 속성에 접근하면 아래와 같다 (값을 읽기 위해서는 getAttribute()를 사용)
+article.dataset에는 columns, indexNumber, parent 의 값이 모두 들어있다.   
+
+```js
+ var section = document.getElementById('electriccars'); 
+ section.dataset.columns // "3" 
+ section.dataset.indexNumber // "12314" 
+ section.dataset.parent // "cars"
+```
+
+[참조](https://css-tricks.com/a-complete-guide-to-data-attributes/ )
+
+
+
+좀더 많은 내용으로 해보자면,  
 
 
 
@@ -83,7 +98,7 @@ body {  margin: 1rem;}
 ```
 
 #### 3. 대소문자 구분하지 않기 (i 옵션 사용하기)
-
+아래의 예는 hello가 들어간 문장에 손흔드는 이모지 삽입해주는 것이다. 
 ```
 <style>
  .message { width: 200px; background-color: lightblue;
@@ -141,16 +156,6 @@ body {  margin: 1rem;}
 ```
 
 
-#### 4. JavaScript에서 커스텀 데이터 속성에 접근하기
 
-값을 읽기 위해서는 getAttribute()를 사용하면 된다.
-```js
- var section = document.getElementById('electriccars'); 
- section.dataset.columns // "3" 
- section.dataset.indexNumber // "12314" 
- section.dataset.parent // "cars"
-```
-
-[참조](https://css-tricks.com/a-complete-guide-to-data-attributes/ )
 
 
