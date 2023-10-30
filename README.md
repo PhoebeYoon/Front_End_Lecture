@@ -81,7 +81,9 @@ const observer = new IntersectionObserver(entries =>{
                 // console.log(img)
                 img.classList.remove('show')
             })
-     //let x = entry.target.dataset.imgToShow; // imgToShow 는 <div data-img-to-show ~ >를 data- 를 빼고 js에서 변환시킨 이름이다. 카멜케이스방식으로 이름을 변경한다. 그래서 imgToShow가 된것이다
+     //let x = entry.target.dataset.imgToShow; // imgToShow 는 <div data-img-to-show ~ >에서
+                                              // data- 를 빼고 js에서 변환시킨 이름이다.
+                                    // 카멜케이스방식으로 이름을 변경한다. 그래서 imgToShow가 된것이다
      //console.log(x) // 출력: #img-1 
 
         const img= document.querySelector(entry.target.dataset.imgToShow)
