@@ -27,13 +27,17 @@ article[data-columns='4'] {
 
 <section>
    <article id="electriccars"
-  data-columns="3"
+  data-columns="3" 
   data-index-number="12314"
   data-parent="cars">
 ...
 </section>
 
 ```
+이렇게 적으면 js에 있는 data-columns의 값에 따라 css가 바뀐다. 
+
+
+
 
 ```html
 <style>
