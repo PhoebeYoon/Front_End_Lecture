@@ -83,8 +83,29 @@ document.body.sayHi();
 태그는 속송들을 가질 수 있다. 브라우저가 html를 파싱하여 태그를 위해 DOM 오브젝트를 생성할때, 이것들은 표준 DOM properties와 attributes를 인지한다.   
 그러므로 엘리먼트는 id 또는 다른 표준 attribute, 만들어진 the corresponding property를 가질 수 있지만 속성이 비표준인 경우에는 해당 속성이 생성되지 않는다.  
 
+```html
+<body id="test" something="non-standard">
+    <script>
+alert(document.body.id)
+alert(document.body.something)  // undefined
+    </script>
+</body>
 
+```
+something는 표준이 아니므로 인지하지 못한다. 
 
+```html
+<body id="test" something="non-standard">
+    <input id="input" type="checkbox">
+    <script>
+alert(document.body.id)
+// alert(document.body.something)
+alert(input.type)
+// input에는 type이라는 속성이 존재하여 출력은 checkbox가 나온다
+alert(body.type) // body에는 type속성이 없으므로 출력이 안된다 .
+//  속성이 비표준인 경우에는 DOM-property가 존재하지 않기때문이다
+    </script>
+```
 
 
 
