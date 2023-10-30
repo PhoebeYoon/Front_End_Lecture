@@ -97,6 +97,14 @@ document.querySelectorAll("[data-img-to-show]").forEach(section =>{
     observer.observe(section)
 })
 </script>
+``` 
+위의 내용에서  ```  <div data-image-visible="#img-3" ></div>``` 변경하면 기존의 코드는 작동되질 않는다   
+```js
+const img= document.querySelector(entry.target.dataset.imageVisible)
+document.querySelectorAll("[data-image-visible").forEach(section =>{
+    observer.observe(section)
+})
+이 부분들 바꿔야 한다 
 ```
 
 
