@@ -57,7 +57,7 @@ const observer = new IntersectionObserver(entries =>{
     })  
     </script>
 ```
-js를 아래와 같이 수정한다.   
+js를 아래와 같이 수정한다.   (css도 바뀝니다. 첨부된 파일에서 참조)   
 
 ```js
 window.addEventListener("scroll", setScrollVar)
