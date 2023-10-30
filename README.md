@@ -50,7 +50,8 @@ const observer = new IntersectionObserver(entries =>{
         // console.log(entry.target.id)
         if( !entry.isIntersecting) {
             console.log(entry.target.getAttribute('src'))  // 속성을 읽어오는지 점검
-            entry.target.setAttribute('style',"display:block;")  // 기존 css을 변경, none-> block 수정
+            entry.target.setAttribute('style',"display:block;")
+                          // 기존 css을 변경, none-> block 수정
          }
      }
 })
