@@ -58,5 +58,44 @@ const observer = new IntersectionObserver(entries =>{
             observer.observe(section)
     })  
     </script>
-
 ```
+js를 아래와 같이 수정한다.   
+
+```js
+window.addEventListener("scroll", setScrollVar)
+window.addEventListener("resize", setScrollVar)
+function setScrollVar(){
+    const htmlElement = document.documentElement ;
+    const percentOfScreenHeightScrolled = htmlElement.scrollTop / htmlElement.clientHeight;
+    htmlElement.style.setProperty(
+    "--scroll" ,
+        Math.min( percentOfScreenHeightScrolled*100, 100)
+    )
+}
+setScrollVar()
+const observer = new IntersectionObserver(entries =>{ 
+    for( let i= entries.length-1; i>=0; i--){
+        const entry = entries[i]
+        if( entry.isIntersecting){
+            document.querySelectorAll("[data-img]").forEach( img=>{
+                // console.log(img)
+                img.classList.remove('show')
+            })
+     //let x = entry.target.dataset.imgToShow; // imgToShow 는 <div data-img-to-show ~ >를 data- 를 빼고 js에서 변환시킨 이름이다. 카멜케이스방식으로 이름을 변경한다. 그래서 imgToShow가 된것이다
+     //console.log(x) // 출력: #img-1 
+
+        const img= document.querySelector(entry.target.dataset.imgToShow)
+        img.classList.add("show")
+        break
+        }
+    }
+})
+document.querySelectorAll("[data-img-to-show]").forEach(section =>{
+    observer.observe(section)
+})
+</script>
+```
+
+
+
+
