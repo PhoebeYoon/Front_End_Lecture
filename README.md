@@ -2,22 +2,19 @@
 
 
 ## data-속성 / intersectionObserver 함께 사용해서
+https://www.youtube.com/watch?v=-pDPASqX97w 의 내용을 따라한것이며 주석의 내용은 본인입니다  
 
 ```html
   <style>
-        .full-screen-section {
-        position: relative;}
-
-        [data-img-to-show] {
-            position: absolute;
-            top:20%;
-            width: 100%; height: 10px;
-            background-color: red;
-  
-        }
-        img[data-img] { display: none;}
-        .show { display: block;}
-        .bg { background-color: green;}
+    .full-screen-section {    position: relative;}
+    [data-img-to-show] {
+        position: absolute;
+        top:20%;
+        width: 100%; height: 10px;
+        background-color: red;  }
+    img[data-img] { display: none;}
+    .show { display: block;}
+    .bg { background-color: green;}
     </style>
 <div class="imgs">
         <img src="https://placehold.co/300x200/orange/white" data-img  id="img-1">
