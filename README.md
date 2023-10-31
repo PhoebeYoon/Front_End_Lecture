@@ -1,5 +1,8 @@
 ##### 🍑  Front_End 과정 1단계 
 
+## BEM (Block, Element,Modifier) 방법론
+블록, 요소, 수정자 방법론(일반적으로 BEM이라고 함)은 HTML과 CSS의 클래스에 대한 인기 있는 명명 규칙입니다. 얀덱스 팀이 개발한 이 방법의 목표는 개발자들이 주어진 프로젝트에서 HTML과 CSS의 관계를 더 잘 이해할 수 있도록 돕는 것입니다.
+
 ```
 /* Block component */
 .btn {}
