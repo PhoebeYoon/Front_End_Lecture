@@ -23,9 +23,9 @@ min-content는 요소의 너비를 줄일 수 있을만큼 줄이기 때문에 �
 max-content는 요소의 너비를 가장 긴 문장에 맞춥니다.
 ```html
 <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, <br>
-        illum ipsam! Ipsa quos placeat natus facilis, possimus architecto? Eaque delectus deserunt dolores, distinctio  <br> cumque assumenda! Nam qui nulla dolor! Libero.</div>
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore doloribus culpa, ut commodi explicabo incidunt vel nesciunt, sequi voluptatibus, in consectetur perferendis! Et blanditiis, nisi quis delectus rem hic facilis?</p>
-    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. At possimus autem eligendi doloribus molestias reiciendis molestiae distinctio incidunt nam quos, quisquam officiis cum, maiores, amet vero itaque nostrum perspiciatis sapiente.</span>
+illum ipsam! Ipsa quos placeat natus facilis, possimus architecto? Eaque delectus deserunt dolores, distinctio  <br> cumque assumenda! Nam qui nulla dolor! Libero.</div>
+<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore doloribus culpa, ut commodi explicabo incidunt vel nesciunt, sequi voluptatibus, in consectetur perferendis! Et blanditiis, nisi quis delectus rem hic facilis?</p>
+<span>Lorem ipsum dolor sit amet consectetur adipisicing elit. At possimus autem eligendi doloribus molestias reiciendis molestiae distinctio incidunt nam quos, quisquam officiis cum, maiores, amet vero itaque nostrum perspiciatis sapiente.</span>
 ```
 위의 코드에서 
 1. div태그안에 여러개의 br 태그를 삽입했을때(여기서는 3줄) 가장 긴 문장의 길이가 너비가 됩니다.  
@@ -35,6 +35,37 @@ max-content는 요소의 너비를 가장 긴 문장에 맞춥니다.
 ## width : fit-content 
 auto + max-content의 하이브리드 형입니다. 위의 긴 문장에 width:fit-content로만 바꾸면 p 태그에 변화가 생깁니다. p태그의 내용이 가로 방향으로 한 줄로 쭈욱 되었던것이 브라우저의 오른쪽 끝에서 자동 줄바꿈이 일어납니다.  
 다른 div, span는 이전과 동일하게 작동합니다.   
+
+
+## 쓰기모드와 함께 사용할때는 
+1. inline-size : 쓰기모드가 수평일때는 요소의 폭을 정의, 쓰기모드가 수직일때는 요소의 높이를 정의한다.
+2. block-size 라는 것이 또 있습니다.
+
+```html
+<style>
+   .elem { 
+       /* writing-mode: vertical-lr;  */
+       inline-size: 400px;
+       background-color: orange;  }
+ </style>
+<div class="elem">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+ Nemo, laboriosam eveniet? Illo voluptas repellendus ve
+ritatis possimus doloribus </div>
+```
+
+
+위의 예제에서 쓰기모드가 수직일지라도 .elem의 너비를 400px로 유지하고 싶다면 다른 방식으로 이렇게 해 볼 수도 있다. 
+```html
+ <style>
+     html{writing-mode: vertical-lr;   }
+     p { width: 400px; background-color:MediumTurquoise; }
+ </style>
+```
+p태그에 크기는 그냥 width를 지정했다.
+
+
+
+
 
 
 
