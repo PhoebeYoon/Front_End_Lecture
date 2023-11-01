@@ -9,6 +9,8 @@
     .clr-accent { color:dodgerblue}
       article > :nth-child(1 of .clr-accent) { text-decoration: underline;
         color:red; font-size: 1.5rem;}
+  /*   article > :nth-child(3 of p)  p태그 중에서 3번째 것 */
+
     </style>
     <article>
         <h1 class="article-title">  <code>:nth-child getting better</code></h1>
