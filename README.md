@@ -4,7 +4,10 @@
 ## classList 의 기본내용 외의 이렇게도 사용할 수 있도록 바뀌었다.
 
 ```html
-</head>
+ <style>
+.foo { width: 100px; height: 100px; background-color: orange;}
+.visible { border:3px solid}
+    </style>
 <body>
     <script>
 const div = document.createElement("div");
