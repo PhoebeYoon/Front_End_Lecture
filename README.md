@@ -130,6 +130,31 @@ p class="content">
 위의 내용을 적용순서는 
 1. base
 2. framebark - 1. base > 2.theme
+아래의 내용은 중복된 내용을 다시 정의하지 않고 이미 선언된 내용을 가져와서 사용한다는 것이다. 이때 점(.)를 사용한다 
+```html
+
+    <style>
+@layer mylayer2, mylayer1;
+@layer mylayer2 {
+	.content {color: #00FFFF;   }
+    @layer mybg{
+        p{background-color: gray;}
+    }
+}
+
+@layer mylayer2.mybg{
+    p { text-decoration: underline;}
+// p 태그의 배경 색상을 선언하지 않고 이미 선언된 mylayer1의 mybg 레이어의 내용을 가져온다   
+}
+    </style>
+<p class="content">
+    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+</p>
+<p class="content">
+    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+</p>
+```
+
 
 
 
