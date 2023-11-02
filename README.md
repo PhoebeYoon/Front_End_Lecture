@@ -3,8 +3,5 @@
 참조 : 
 - https://developer.mozilla.org/
 - http://www.devdic.com/
-
-
-
-http://www.devdic.com/reference/css (css 레퍼런스) 
+- http://www.devdic.com/reference/css (css 레퍼런스) 
  
