@@ -155,6 +155,23 @@ p class="content">
 </p>
 ```
 
+### 미디어쿼리 안에 @layer를 사용할 수 있다.
+미디어쿼리 안에 @layer를 사용할 수 있다. 하지만 미디어쿼리가 조건이 충족되지 않으면 레이어 순서에 고려되지 않으며 조건에 충족될 때 레이어 순서가 다시 계산된다.
 
+```
+@media (min-width: 30px) {
+  @layer layout {
+    .title { font-size: x-large; }
+  }
+}
 
+@media (prefers-color-scheme: dark) {
+  @layer theme {
+    .title { color: white; }
+  }
+}
+
+```
+
+참고 : https://wit.nts-corp.com/2022/05/24/6528  
 
