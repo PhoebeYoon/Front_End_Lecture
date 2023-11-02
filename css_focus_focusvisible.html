@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+/* input, button { margin: 10px; }
+.focus-only:focus { outline: 2px solid black; }
+.focus-visible-only:focus-visible { outline: 4px dashed darkorange;} */
+
+.wrapper {
+  background: black;  text-align: center;
+  width: 360px;  height: 100px;
+  padding: 40px;  box-sizing: border-box;
+  color: blanchedalmond;
+}
+.image-nav-button {
+  color: blanchedalmond;  text-decoration: none;
+  font-size: 20px;  line-height: 1em;
+}
+.next {  float: right;}
+.prev {  float: left;}
+.image-nav-button:focus {  outline: none;
+  /* Try uncommenting below, then clicking the buttons */
+  /* outline: 3px solid red; */
+}
+.image-nav-button:focus-visible {
+  outline: 3px solid blanchedalmond;
+}
+    </style>
+</head>
+<body>
+    <!-- <input type="text" value="Default styles" /><br />
+    <button>Default styles</button><br />
+    <input class="focus-only" type="text" value=":focus" /><br />
+    <button class="focus-only">:focus</button><br />
+    <input class="focus-visible-only" type="text" value=":focus-visible" /><br />
+    <button class="focus-visible-only">:focus-visible</button> -->
+
+    <div class="wrapper">
+        <a href="#" tabindex="1" class="image-nav-button prev">&larr; Prev Image</a>
+        <a href="#"  tabindex="2" class="image-nav-button next">Next Image &rarr;</a>
+        </div>
+       
+</body>
+</html>
