@@ -110,7 +110,26 @@ p class="content">
 2개의 p가 모두 회색에 빨간색이지만 css의 .goback 주석을 해제하면 결과가 달라진다.
 2번째 p는 color의 값을 적용할때 revert-layer라는 것이 적용되어 다음 mylayer2의 값이 적용된다. 
 
+### 중첩레이어
+```
+@layer base { /* 첫번째 레이어 */
+  p { max-width: 70px; }
+}
 
+@layer framework { /* 두번째 레이어 */
+  @layer base { /* 두번째 레이어의 첫번째 레이어 */
+    p { max-width: 100px; }
+  }
+
+  @layer theme { /* 두번째 레이어의 두번째 레이어 */
+    p { color: #222; }
+  }
+}
+
+```
+위의 내용을 적용순서는 
+1. base
+2. framebark - 1. base > 2.theme
 
 
 
