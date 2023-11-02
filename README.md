@@ -66,3 +66,7 @@ window.addEventListener('scroll', ()=>{
 </script>
 ```
 
+> 이미지들의 크기를 맞추는 것도 중요하다
+
+참조 ) https://www.youtube.com/watch?v=MXR5vIpE0RQ   
+
