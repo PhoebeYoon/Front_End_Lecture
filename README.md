@@ -45,3 +45,53 @@
 ```
 
 출처 : http://www.devdic.com/css/reference/cssrules/css-rule:1375/@supports
+
+
+```
+@supports (transform-origin: 5% 5%) {
+}
+
+```
+
+
+### @supports selector(h2 > p) {  }
+
+```
+  <div>
+        <span>
+          Span #1, in the div.
+          <span>Span #2, in the span that's in the div.</span>
+        </span>
+      </div>
+      <span>Span #3, not in the div at all.</span>
+      <style>
+
+@supports selector(span > span ){
+   span {background-color: orange;}
+}
+span {background-color: aqua;}
+div > span { background-color: yellow; }
+
+@supports selector(span > span ){
+   span > span {background-color: orange;}
+}
+      </style>
+```
+
+
+```
+@supports font-tech(color-COLRv1) {
+}
+
+```
+
+```
+@supports not (transform-origin: 10em 10em 10em) {
+}
+```
+
+```
+@supports (display: table-cell) and (display: list-item) {
+}
+```
+
