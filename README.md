@@ -57,9 +57,42 @@ window.CSS.registerProperty({
 </script>
 ```
 또한,
-자바스크립트에서 정의한 값을  재정의해서 사용하고자 한다면 스타일에서 값을 바꾸어야 한다. 
-``` document.documentElement.style.setProperty('--primary','gold')```
-주의할 것은 CSS.registerProperty()가 아니라 .style.setProperty() 이다.
+자바스크립트에서 정의한 값을  재정의해서 사용하고자 한다면 스타일에서 값을 바꾸어야 한다.   
+``` document.documentElement.style.setProperty('--primary','gold')```    
+주의할 것은 CSS.registerProperty()가 아니라 .style.setProperty() 이다.  
+또한 위에서 바꾼 내용은 document.documentElement에서 스타일을 바꾼것이기 때문에 초기값이 바뀐것이다.  
+만약 특정한 엘리먼트에서 값을 바꿀 수도 있다. 
+```
+document.documentElement.style.setProperty('--primary','magenta');
+document.querySelector('.text-2').style.setProperty('--primary','gold');
+```  
+이렇게하면 초기값은 마젠타로, .text-2 클래스는 골드색으로 바뀐다.   
+
+### getComputedStyle(), getPropertyValue()
+자바스크립트에서 따로 설정한 값을 가져오는 것을 시도해보자. 우선 접근은 getComputedStyle()로 하고 특정값을 가져올때는  getPropertyValue()이다. 
+
+위의 코드에 
+```js
+  window.CSS.registerProperty({
+    name:'--primary',
+    syntax :'<color>',
+    initialValue:'blue',
+    inherits: true
+    })
+document.documentElement.style.setProperty('--primary','magenta');
+document.querySelector('.text-2').style.setProperty('--primary','gold');
+
+const result1= getComputedStyle(document.querySelector('.text-1'))
+console.log(result1)  // 적용된 스타일전체를 보여준다 
+
+console.log(result1.getPropertyValue('--primary')) // --primary값만 출력하여 rgb(255, 0, 255)
+
+const result2= getComputedStyle(document.querySelector('.text-2'))
+console.log(result2.getPropertyValue('--primary')) // .text-2의 색상인 rgb(255, 215, 0) 출력
+```
+
+
+
 
 
 
