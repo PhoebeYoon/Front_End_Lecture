@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+ @property --colorPrimary {
+  syntax: "<color>";
+  initial-value: magenta;
+  inherits: false;
+}
+@property --stop {
+  syntax: "<percentage>";
+  initial-value: 50%;
+  inherits: false;
+}
+body { background-color: var(--colorPrimary);
+    display: grid;  
+    grid-template-columns: 50% 50%;  margin: 0;
+    }
+div{ height: 100vh; 
+background-image: 
+   linear-gradient(to bottom, black, var(--stop), var(--colorPrimary));}
+div:hover { --colorPrimary : red; --stop:10%}
+    </style>
+</head>
+<body>
+<div></div>
+<div></div>
+</body>
+</html>

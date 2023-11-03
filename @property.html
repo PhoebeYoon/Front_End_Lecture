@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+ @property --primary {
+ syntax: '<color>';
+ initial-value: orange;
+ inherits: false;
+}       
+.text-1 { color:var(--primary)}
+.text-2 { 
+     --primary:green;  
+     color:var(--primary)}
+    </style>
+<h3>1. CSS 변수 사용하기</h3>
+<span class="text-1">CSS Variables</span><br/><br/>
+
+<h3>2. 변수에 타입에 맞지 않는 값을 할당한 경우, 초기값을 사용</h3>
+<span class="text-2">CSS Variables</span>
+<span>another span</span>
+
+</body>
+</html>
