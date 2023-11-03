@@ -95,3 +95,9 @@ div > span { background-color: yellow; }
 }
 ```
 
+```
+@supports (transform-style: preserve) or (-moz-transform-style: preserve) {
+}
+```
+
+
