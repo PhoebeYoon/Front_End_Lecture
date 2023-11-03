@@ -91,6 +91,33 @@ const result2= getComputedStyle(document.querySelector('.text-2'))
 console.log(result2.getPropertyValue('--primary')) // .text-2의 색상인 rgb(255, 215, 0) 출력
 ```
 
+[다른 예]
+```html
+    <style>
+ @property --colorPrimary {
+  syntax: "<color>";
+  initial-value: magenta;
+  inherits: false;
+}
+@property --stop {
+  syntax: "<percentage>";
+  initial-value: 50%;
+  inherits: false;
+}
+body { background-color: var(--colorPrimary);
+    display: grid;  
+    grid-template-columns: 50% 50%;  margin: 0;
+    }
+div{ height: 100vh; 
+background-image: 
+   linear-gradient(to bottom, black, var(--stop), var(--colorPrimary));}
+div:hover { --colorPrimary : red; --stop:10%}
+    </style>
+</head>
+<div></div>
+<div></div>
+```
+
 
 
 
