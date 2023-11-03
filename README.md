@@ -4,7 +4,7 @@
 
 자바스크립트를 실행할 필요없이 스타일 시트에서 직접 사용자 지정 속성 등록을 나타낸다. 유효한 @property 규칙은 자바스크립트의 registerProperty()가 동등한 매개변수로 호출된 것처럼 사용자 정의 속성을 등록한다.
 
-@property는 CSS 변수의 초기값, 유형, 상속 여부를 선언할 수 있다.  
+@property는 CSS 변수의 초기값, 유형를 선언할 수 있다.  
 ```html  
    <style>
 @property --primary {
@@ -33,7 +33,7 @@ window.CSS.registerProperty({
    name: '--primary',       // 변수명
   syntax: '<color>',       // 변수값 유형
   initialValue: 'orange',  // 초기값
-  inherits: true,          // 상속여부
+  inherits: true,         
 })
 ```
 위의 예제를 다시 적으면, 
@@ -68,8 +68,8 @@ document.querySelector('.text-2').style.setProperty('--primary','gold');
 ```  
 이렇게하면 초기값은 마젠타로, .text-2 클래스는 골드색으로 바뀐다.   
 
-### getComputedStyle(), getPropertyValue()
-자바스크립트에서 따로 설정한 값을 가져오는 것을 시도해보자. 우선 접근은 getComputedStyle()로 하고 특정값을 가져올때는  getPropertyValue()이다. 
+### getComputedStyle(), getPropertyValue()   
+자바스크립트에서 따로 설정한 값을 가져오는 것을 시도해보자. 우선 접근은 getComputedStyle()로 하고 특정값을 가져올때는  getPropertyValue()이다. 
 
 위의 코드에 
 ```js
@@ -90,6 +90,19 @@ console.log(result1.getPropertyValue('--primary')) // --primary값만 출력하�
 const result2= getComputedStyle(document.querySelector('.text-2'))
 console.log(result2.getPropertyValue('--primary')) // .text-2의 색상인 rgb(255, 215, 0) 출력
 ```
+
+### Syntax 에는  
+```
+syntax: "<color>" ,"<number>","<percentage>","<length>",
+ "<image>", "<url>","<integer>","<angle>", "<time>"
+ "<resolution>", "<transform-function>","<custom-ident>"
+"<transform-list>" 
+```
+
+> "transform-function"으로는 , matrix(),perspective(),rotate(),scale(),translate() 등등
+
+> "custom-ident" 으로는, CSS data type은 식별자로 사용되는 임의의 사용자 정의 문자열을 의미하며 대소문자를 구분한다 
+
 
 [다른 예]
 ```html
@@ -118,6 +131,58 @@ div:hover { --colorPrimary : red; --stop:10%}
 <div></div>
 ```
 
+###   inherits: false / true 만
+```html
+<style>
+@property --item-size {
+  syntax: "<percentage>";
+  inherits: true;
+  initial-value: 40%;
+}
+.container {
+  display: flex;
+  height: 200px;
+  border: 1px dashed black;
+
+  /* set custom property values on parent */
+  --item-size: 20%;
+  --item-color: orange;
+}
+
+/* use custom properties to set item size and background color */
+.item {
+  width: var(--item-size);
+  height: var(--item-size);
+  background-color: var(--item-color);
+}
+
+/* set custom property values on element itself */
+.two {
+  --item-size: initial;
+  --item-color: inherit;
+}
+
+.three {
+  /* invalid values */
+  --item-size: 1000px;
+  --item-color: inherit;
+}
+
+    </style>
+<div class="container">
+    <div class="item one">Item one</div>
+    <div class="item two">Item two</div>
+    <div class="item three">Item three</div>
+  </div>
+<script>
+window.CSS.registerProperty({
+  name: "--item-color",
+  syntax: "<color>",
+  inherits: false,
+  initialValue: "aqua",
+});
+</script>
+```
 
 
 
