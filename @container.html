@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+  .parent {
+  container-type: inline-size;
+  container-name: child-style;
+  border: 3px solid gray;
+  width: 200px;
+  height: 200px;
+  display: grid;
+}
+.child {
+  width: 100px;
+  height: 100px;
+  background: blue;
+}
+
+@container child-style (max-width: 400px) {
+  .child {
+    background: red;
+  }
+}
+    </style>
+<h2>container-type: inline-size</h2>
+- width 크기변화:
+<input type="range" value="200" id="width" name="width" min="200" max="500" onInput="onInput(event)"> <br />
+
+<hr />
+
+<div class="parent">
+  <div class="child"></div>
+</div>
+<script>
+const parent = document.querySelector(".parent");
+function onInput(e) {
+  parent.style.width = `${e.target.value}px`;
+}
+</script>
+</body>
+</html>
