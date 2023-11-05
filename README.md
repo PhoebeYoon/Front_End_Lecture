@@ -84,7 +84,7 @@ document.body.sayHi();
 
 ### html attributes   
 
-태그는 속송들을 가질 수 있다. 브라우저가 html를 파싱하여 태그를 위해 DOM 오브젝트를 생성할때, 이것들은 표준 DOM properties와 attributes를 인지한다.   
+태그는 속성들을 가질 수 있다. 브라우저가 html를 파싱하여 태그를 위해 DOM 오브젝트를 생성할때, 이것들은 표준 DOM properties와 attributes를 인지한다.   
 그러므로 엘리먼트는 id 또는 다른 표준 attribute, 만들어진 the corresponding property를 가질 수 있지만 속성이 비표준인 경우에는 해당 속성이 생성되지 않는다.  
 
 ```html
