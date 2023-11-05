@@ -1,7 +1,7 @@
 ##### 🍑  Front_End 과정 1단계 
 
 
-## classList 의 기본내용 외의 이렇게도 사용할 수 있도록 바뀌었다.
+## classList 이렇게도 사용해 봅시다.
 
 ```html
  <style>
