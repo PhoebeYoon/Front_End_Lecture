@@ -155,7 +155,8 @@ element.style.setProperty("--my-var", jsVar + 4);
 #### 🍎 getPropertyPriority() / window.getComputedStyle() 
 
 ```   
-<h2 style="color:orange">heading 2</h2> 
+<h2 style="color:orange">heading 2</h2>
+
 let myh2 = document.querySelector('h2')
 console.log(myh2.style.getPropertyValue('color'))
 이렇게하면 color 값을 가져온다.  그러나 같은 컬러를 style태그에서 정의하면 null 값이 나온다.
@@ -164,6 +165,10 @@ console.log(myh2.style.getPropertyValue('color'))
 window.getComputedStyle(myh2).getPropertyValue('color')로 접근해야 한다.
 
 ```
+
+태그안에 style속성을 지정하고 값을 준것은 개발자도구 해당 엘리먼트.style의 하단 항목으로 접근할 수 있다. 그러나 style태그로 지정된 속성은 해당 엘리먼트.style의 하단 항목에 나타나지 않는다.  
+
+
 
 
 ## 재정의해서 사용
