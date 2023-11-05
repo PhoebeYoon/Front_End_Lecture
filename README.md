@@ -1,5 +1,12 @@
 ##### 🍑  Front_End 과정 1단계 
 
+## border-block
+border 속성값을 설정한다. writing-mode에 따라 결과가 달라진다.   
+border-block는 아래의 속성과 함께를 축약한 것이다.  
+- border-block-color    
+- border-block-style    
+- border-block-width    
+
 #### writing-mode 와 함께 사용할것
 ```html
 <style>
