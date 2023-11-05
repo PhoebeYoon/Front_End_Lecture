@@ -29,25 +29,24 @@ aspect-ratio: 5는  5 / 1로 높이를 1로 간주한다 그러니까 width가 1
 
 ```html
 <style>
-        body { display: flex; 
-        gap:20px}
+        body { display: flex; gap:20px}
         .box-1 { background-color: teal;
                  width: 100px;  aspect-ratio: auto 1 /1;}
         .box-2 { width: 100px;  aspect-ratio: auto 1 /1;}
         .box-3 { width: 100px;  aspect-ratio: auto 1 /1;}
 </style>
 <div>
-        <h4>A. 종횡비 1/1 적용</h4>
-        <div class="box-1"></div>
-    </div>
-    <div>
-        <h4>B. 종횡비 auto 적용</h4>
-        <img class="box-2" src="https://place-hold.it/300x500/ddd"/>
-      </div>
-    <div>
-        <h4>C. 종횡비 1/1 적용</h4>
-        <img class="box-3" src=https://place-hold.it/300x500/ff0"/>
-      </div>
+    <h4>A. 종횡비 1/1 적용</h4>
+    <div class="box-1"></div>
+</div>
+<div>
+    <h4>B. 종횡비 auto 적용</h4>
+    <img class="box-2" src="https://place-hold.it/300x500/ddd"/>
+  </div>
+<div>
+    <h4>C. 종횡비 1/1 적용</h4>
+    <img class="box-3" src=https://place-hold.it/300x500/ff0"/>
+</div>
 ```
 같은 스타일을 적용했을때 A는 자체의 비율을 갖고 있지 않기 때문에 1/1로  작동한다.  
 B는 이미 비율이 존재하기 때문에 auto가 작동하여  width:100px를 300 /500의 비율에 맞춰서 조절된다 (100 x 166.66 )   
