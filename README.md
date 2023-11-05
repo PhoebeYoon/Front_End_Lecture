@@ -117,8 +117,8 @@ body {
 
 ```css
 .two {
-  /* Red if --my-var is not defined */
-  color: var(--my-var, red);
+ /* --my-var가 정의되지 않았을 경우 red로 표시됨   */
+  color: var(--my-var, red);  
 }
 
 .three {
