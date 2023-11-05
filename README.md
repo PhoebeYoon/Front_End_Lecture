@@ -14,7 +14,7 @@
 
 ### & 는 sass,less 에서 사용하는 것으로 'this' 의미를 갖는다.  
 이것은 순수한 css가 아니라 scss( Sass, LESS)로 css 로 변환될때 'this'의 의미로 해석된다.  
-
+( 여기서 언급한 이유는 요즘 이것 기호가 서치할때 많이 보이기 때문에 '이해' 차원에서 언급해 본다 )  
 ```html
  h1 { background-color: beige; }
  .ex1 { 
