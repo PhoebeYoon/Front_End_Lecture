@@ -11,42 +11,42 @@
 ```html
 <p>Hello</p>
 
-    <label for="greeting">Greeting</label>
-    <!-- 1.  -->
-    <input type="checkbox" id="greeting2">
-    <!-- 2. -->
-    <input type="text" id="greeting">
+<label for="greeting">Greeting</label>
+<!-- 1.  -->
+<input type="checkbox" id="greeting2">
+<!-- 2. -->
+<input type="text" id="greeting">
 
-    <script>
-        let p = document.querySelector('p');
-        // Update the ID
-        p.setAttribute('id', 'first-paragraph');
+<script>
+    let p = document.querySelector('p');
+    // Update the ID
+    p.setAttribute('id', 'first-paragraph');
 
-        // These both return "first-paragraph"
-        let id1 = p.getAttribute('id');
-        let id2 = p.id;
-        console.log( id1, id2)
+    // These both return "first-paragraph"
+    let id1 = p.getAttribute('id');
+    let id2 = p.id;
+    console.log( id1, id2)
 
 
-        // 1. However, user-changeable form properties—noteably, 
-        // value, checked, and selected—are not automatically synced.
-        let greeting2 = document.querySelector('#greeting2');
-         greeting2.setAttribute('checked' ,'yes')
+    // 1. However, user-changeable form properties—noteably, 
+    // value, checked, and selected—are not automatically synced.
+    let greeting2 = document.querySelector('#greeting2');
+     greeting2.setAttribute('checked' ,'yes')
 
-       
-         // 2. type=text는 user-changeable 이므로 아래의 내용이 되질 않는다
-         let greeting= document.querySelector('#greeting');
-         greeting2.setAttribute('checked' ,'yes')
+   
+     // 2. type=text는 user-changeable 이므로 아래의 내용이 되질 않는다
+     let greeting= document.querySelector('#greeting');
+     greeting2.setAttribute('checked' ,'yes')
 
-         // Update the value
-          greeting.setAttribute('value', 'Hello there!');
-          let val1 = greeting.value;
-          let val2 = greeting.getAttribute('value');
-          console.log( 'val1 : ' , val1 , ', val2 :',val2)
+     // Update the value
+      greeting.setAttribute('value', 'Hello there!');
+      let val1 = greeting.value;
+      let val2 = greeting.getAttribute('value');
+      console.log( 'val1 : ' , val1 , ', val2 :',val2)
 
-          greeting.value = 'Bye~~!';
+      greeting.value = 'Bye~~!';
 
-    </script>
+</script>
 
 ```
 ## DOM properties ,HTML attributes 로 일단 이해하자
