@@ -152,6 +152,19 @@ element.style.setProperty("--my-var", jsVar + 4);
 
 ```
 
+#### 🍎 getPropertyPriority() / window.getComputedStyle() 
+
+```   
+<h2 style="color:orange">heading 2</h2> 
+let myh2 = document.querySelector('h2')
+console.log(myh2.style.getPropertyValue('color'))
+이렇게하면 color 값을 가져온다.  그러나 같은 컬러를 style태그에서 정의하면 null 값이 나온다.
+
+<style> 에서 정의된 스타일은
+window.getComputedStyle(myh2).getPropertyValue('color')로 접근해야 한다.
+
+```
+
 
 ## 재정의해서 사용
 ```html
