@@ -44,11 +44,11 @@ body {background-color: #262829}
     </div>
 
 <script>
-  const bg= document.getElementById('bg')
-    const moon= document.getElementById('moon')
-    const mountain= document.getElementById('mountain')
-    const road= document.getElementById('road')
-    const title= document.getElementById('title')
+const bg= document.getElementById('bg')
+const moon= document.getElementById('moon')
+const mountain= document.getElementById('mountain')
+const road= document.getElementById('road')
+const title= document.getElementById('title')
 window.addEventListener('scroll', ()=>{
     const {scrollY } = window;
    //  window의 속성을 바로 가져온다 즉 scrollY 값을 가져온다 .
