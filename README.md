@@ -93,22 +93,22 @@ body {
 
 <a href="https://css-tricks.com" class="btn">
         <span class="btn__text">Standard button</span>
-      </a>
-      
-      <a href="https://css-tricks.com" class="btn btn--orange btn--big">
-        <span class="btn__price">$3</span>
-        <span class="btn__text">Big button</span>
-      </a>
-      
-      <a href="https://css-tricks.com" class="btn btn--blue btn--big">
-        <span class="btn__price">$4</span>
-        <span class="btn__text">Big button</span>
-      </a>
-      
-      <a href="https://css-tricks.com" class="btn btn--green btn--big">
-        <span class="btn__price">$9</span>
-        <span class="btn__text">Big button</span>
-      </a>
+</a>
+
+<a href="https://css-tricks.com" class="btn btn--orange btn--big">
+  <span class="btn__price">$3</span>
+  <span class="btn__text">Big button</span>
+</a>
+
+<a href="https://css-tricks.com" class="btn btn--blue btn--big">
+  <span class="btn__price">$4</span>
+  <span class="btn__text">Big button</span>
+</a>
+
+<a href="https://css-tricks.com" class="btn btn--green btn--big">
+  <span class="btn__price">$9</span>
+  <span class="btn__text">Big button</span>
+</a>
 
 ```
 
@@ -159,9 +159,12 @@ element.style.setProperty("--my-var", jsVar + 4);
 
 let myh2 = document.querySelector('h2')
 console.log(myh2.style.getPropertyValue('color'))
+console.log(myh2.style.color)
+
 이렇게하면 color 값을 가져온다.  그러나 같은 컬러를 style태그에서 정의하면 null 값이 나온다.
 
-<style> 에서 정의된 스타일은
+<style> 에서 정의된 스타일은 아래와 같이 접근할 수 있다.
+console.log(window.getComputedStyle(myh2))  
 window.getComputedStyle(myh2).getPropertyValue('color')로 접근해야 한다.
 
 ```
@@ -174,7 +177,7 @@ window.getComputedStyle(myh2).getPropertyValue('color')로 접근해야 한다.
 ## 재정의해서 사용
 ```html
   <style>
-        :root {
+ :root {
   --first-color: #16f;
   --second-color: #ff7;
 }
@@ -216,7 +219,5 @@ window.getComputedStyle(myh2).getPropertyValue('color')로 접근해야 한다.
 @property CSS at-rule은 API의 CSS Houdini 우산의 일부입니다. 이것은 개발자가 CSS 사용자 지정 속성을 명시적으로 정의할 수 있도록 하여 속성 유형 확인 및 제한, 기본값 설정, 사용자 지정 속성이 값을 상속할 수 있는지 여부를 정의할 수 있습니다.
 
 참조 : https://developer.mozilla.org/en-US/docs/Web/CSS/@property
-
-
 
 
