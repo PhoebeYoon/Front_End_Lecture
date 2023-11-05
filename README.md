@@ -127,7 +127,7 @@ body {
 }
 
 .three {
-  /* 틀림: "--my-background, pink" */
+  /* 아래와 같이 사용하면 틀림 */
   background-color: var(--my-var, --my-background, pink);
 }
 
@@ -138,7 +138,7 @@ body {
 
 
 
-### Values in JavaScript
+## Values in JavaScript
 
 ```js
 // get variable from inline style
@@ -153,7 +153,7 @@ element.style.setProperty("--my-var", jsVar + 4);
 ```
 
 
-### 재정의해서 사용
+## 재정의해서 사용
 ```html
   <style>
         :root {
