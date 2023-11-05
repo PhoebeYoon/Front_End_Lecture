@@ -12,7 +12,9 @@
 </div>
 ```
 
-### & 는 sass,less 에서 사용하는 것으로 nested 의미를 갖는다.  
+### & 는 sass,less 에서 사용하는 것으로 'this' 의미를 갖는다.  
+이것은 순수한 css가 아니라 scss( Sass, LESS)로 css 로 변환될때 'this'의 의미로 해석된다.  
+
 ```html
  h1 { background-color: beige; }
  .ex1 { 
