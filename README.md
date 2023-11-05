@@ -152,7 +152,7 @@ element.style.setProperty("--my-var", jsVar + 4);
 
 ```
 
-#### 🍎 getPropertyPriority() / window.getComputedStyle() 
+#### 🍎 getPropertyValue() / window.getComputedStyle() 
 
 ```   
 <h2 style="color:orange">heading 2</h2>
