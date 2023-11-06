@@ -233,3 +233,11 @@ ImageKit을 사용하면, 체인변환을 이용해서 주요 단일 색상을 �
 setTimeout() 에 대한 참조 : https://stackoverflow.com/questions/69523504/when-i-assign-to-a-variable-the-result-of-settimeout-how-does-the-function-insi
 
 
+참고 :1.  https://copyprogramming.com/howto/when-i-assign-to-a-variable-the-result-of-settimeout-how-does-the-function-inside-settimeout-run-even-though-i-don-t-call-my-variable   
+
+2. https://javascript.info/settimeout-setinterval  
+
+
+The execution of setTimeout happens when it is called within the declaration. The variable is then assigned with the timer id, which is its return value.
+
+
