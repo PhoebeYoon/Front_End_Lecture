@@ -16,6 +16,12 @@ Image Lazy Loading은 페이지 안에 있는 실제 이미지들이 실제로 �
 
 laze loading을 다루는 방식은 페이지 내의 거의 모든 리소스에 적용할 수 있습니다. 예를 들어, SPA(Single Page Application) 내에서 JS 파일이 나중에까지 필요하지 않으면 초기에 로드해서 가져오지 않는 것이 가장 좋습니다. 이 처럼 이미지도 바로 보여질 필요가 없다가, 실제로 보여질 필요가 있을 때 로딩을 하는 것입니다
 
+## DOMContentLoaded vs onload 차이
+웹 문서를 만들때, '문서가 로드되는 시점'에 발생하는 이벤트로 주로 DOMContentLoaded와 onload를 사용합니다. 
+DOMContentLoaded는 DOM 트리가 완성되는 즉시이고,   
+onload는 문서의 모든 컨텐츠 ( css, script, images등)이 로드되었을때 이다.
+
+
 ## Lazy Loading을 다루는 여러가지 기술  
 웹 페이지 내 이미지는 두 가지 방법으로 로드할 수 있습니다. 바로 <img>태그와 CSS 속성 중'background'를 이용하는 것입니다. 
 ### 1. img 태그
