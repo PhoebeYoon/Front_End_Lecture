@@ -28,13 +28,15 @@ article[data-columns='4'] {
 <section>
    <article id="electriccars"
   data-columns="3" 
-  data-index-number="12314"
+  data-index-number="12314"  
   data-parent="cars">
 ...
 </section>
 
 ```
 이렇게하고  article 태그안의 data-columns의 값에 따라 css가 바뀐다.  
+**😠**  주의: data-index-number를 가져올때는 dataset.index-number (X) 아니고 dataset.indexNumber(O) 로 적어야 한다.
+
 
 ##### 위의 내용을  JavaScript에서 커스텀 데이터 속성에 접근하면 아래와 같다 (값을 읽기 위해서는 getAttribute()를 사용)
 article.dataset에는 columns, indexNumber, parent 의 값이 모두 들어있다.   
