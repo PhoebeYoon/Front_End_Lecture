@@ -230,3 +230,6 @@ ImageKit을 사용하면, 체인변환을 이용해서 주요 단일 색상을 �
 
 참조) https://helloinyong.tistory.com/297
 
+setTimeout() 에 대한 참조 : https://stackoverflow.com/questions/69523504/when-i-assign-to-a-variable-the-result-of-settimeout-how-does-the-function-insi
+
+
