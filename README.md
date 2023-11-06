@@ -1,6 +1,16 @@
 ##### 🍑  Front_End 과정 1단계 
 
 
+## intersectionObserver를 사용하는 이유 
+
+scroll 이벤트는 성능에 악영향을 줄 수 있는데 스크롤시 짧은 시간 내에 수 백, 수 천의 이벤트가 동기적으로 실행될 수 있습니다. 그리고 페이지 내에 각 요소가 각기의 목적(광고, 레이지 로딩, 무한 스크롤 등)의 이유로 scroll 이벤트를 리스닝하기 때문에 이에 상응하는 콜백이 무수히 실행될 수 있습니다. 이는 메인 스레드에 큰 부하를 줄 수 있습니다.    
+
+그리고 getBoundingClientRect 은 reflow를 발생시킬 수 있습니다. 본래 브라우저는 최적화를 위해 필요한 여러 작업을 묶어 큐에 쌓아 대기하다가 한 번의 reflow 로 처리하고자 합니다. 그러나 getBoundingClientRect 호출시 값(top, right 등)을 정확히 읽어들이기 위해 큐를 flush하고 스타일을 적용함으로써 다 수의 reflow 를 발생시킬 수 있습니다.     
+Intersection Observer API 는 루트 요소와 타겟 요소의 교차점을 관찰합니다. 그리고 타겟 요소가 루트 요소와 교차하는지 아닌지를 구별하는 기능을 제공하고 있습니다. scroll 이벤트와 다르게 교차 시 비동기적으로 실행되며 가시성 구분 시 reflow 를 발생시키지 않습니다. 여러모로 성능 상 유리합니다.
+
+설명 출처 : https://velog.io/@elrion018/실무에서-느낀-점을-곁들인-intersection-Observer-API-정리 
+
+
 ## data-속성 / intersectionObserver 함께 사용해서
 https://www.youtube.com/watch?v=-pDPASqX97w 의 내용을 따라한것이며 주석의 내용은 본인입니다  
 
