@@ -19,6 +19,20 @@ viewport가 아닌 특정 요소의 크기에 따라 스타일링을 할 수 있
 - inline-size : writing-mode에 따라 인라인 크기를 조건으로 사용한다.  
 - orientation :width feature와 height feature 값의 비율로 정의되는 디바이스(device)의 방향을 쿼리한다.  
 
+### and, or, not를 함께 사용할 수 있다    
+```  
+@container (width > 400px) and (height > 400px) {
+  /* <stylesheet> */
+}
+
+@container (width > 400px) or (height > 400px) {
+  /* <stylesheet> */
+}
+
+@container not (width < 400px) {
+  /* <stylesheet> */
+}
+```
 
 
 
