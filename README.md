@@ -24,8 +24,8 @@ body { background:beige;}
 ## localStoage를 이용하여 클릭 및 페이지로드에도 반응하도록 제작
 
 ```html
-    <style>
-        @import url("https://fonts.googleapis.com/css?family=Assistant:400,700|Playfair+Display:900");
+<style>
+@import url("https://fonts.googleapis.com/css?family=Assistant:400,700|Playfair+Display:900");
 
 *,
 *::before,
