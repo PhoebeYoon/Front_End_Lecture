@@ -41,9 +41,9 @@ article.dataset에는 columns, indexNumber, parent 의 값이 모두 들어있�
 
 ```js
  var section = document.getElementById('electriccars'); 
- section.dataset.columns // "3" 
- section.dataset.indexNumber // "12314" 
- section.dataset.parent // "cars"
+ console.log(section.dataset.columns)// "3" 
+ console.log(section.dataset.indexNumber)// "12314" 
+ console.log(section.dataset.parent) // "cars"
 ```
 
 [참조](https://css-tricks.com/a-complete-guide-to-data-attributes/ )
