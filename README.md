@@ -65,7 +65,7 @@ document.addEventListener("DOMContentLoaded", function() {
       clearTimeout(lazyloadThrottleTimeout);
     }    
     
-    lazyloadThrottleTimeout = setTimeout(function() {
+    lazyloadThrottleTimeout = setTimeout(function() {  // 🧠setTimeout()에 할당된 변수에는 실행의 결과로 number가 할당된다
         var scrollTop = window.pageYOffset;
         lazyloadImages.forEach(function(img) {
             if(img.offsetTop < (window.innerHeight + scrollTop)) {
