@@ -83,5 +83,10 @@ cutoff-text라는 클래스안에 모든 내용이 들어가 있어야 한다
 
 ```
 
+### appearance에 대해
+
+외관 CSS 속성은 운영체제의 테마에 따라 플랫폼별 스타일링으로 UI 요소를 표시하는 데 사용됩니다.
+표준화 전에는 이 속성을 통해 button 또는 checkbox과 같은 요소를 위젯으로 표시할 수 있었습니다.   
+
 <img width="600" alt="스크린샷 2023-06-08 오후 10 49 24" src="https://github.com/PhoebeYoon/HTML/assets/48478079/933a0912-f560-4ba9-a47f-e91e2a17c721">
 
