@@ -69,7 +69,7 @@ cutoff-text라는 클래스안에 모든 내용이 들어가 있어야 한다
  background: linear-gradient(to bottom, transparent, white);
 }
 
-.expand-btn { appearance: none; 
+.expand-btn { appearance: none; /*  이걸 추가해야 expand-btn의 모양이 제대로 보인다 */
   border:1px solid black; padding:  .5em;
   border-radius: .25em; cursor: pointer; margin-top: 1rem;;
 }
