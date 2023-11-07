@@ -135,7 +135,7 @@ document.addEventListener("DOMContentLoaded", function() {
     lazyloadImages.forEach(function(image) {
       imageObserver.observe(image);
     });
-  } else {  
+  } else {   // IntersectionObserver를 사용하지 못하는 경우
     var lazyloadThrottleTimeout;
     lazyloadImages = document.querySelectorAll(".lazy");
     
@@ -225,6 +225,44 @@ ImageKit을 사용하면, 체인변환을 이용해서 주요 단일 색상을 �
 <img src="https://ik.imagekit.io/demo/img/image4.jpeg?tr=w-1,h-1:w-400,h-300" alt="dominant color placeholder" />
 
 ```
+
+### 위의 코드 중 IntersectionObserver 만 따로   
+
+```js
+<script>
+        document.addEventListener('DOMContentLoaded', ()=>{
+        
+            if("IntersectionObserver" in window){
+             let lazyImgs= document.querySelectorAll('img.lazy')
+                
+            let imgObserver= new IntersectionObserver(function( items, observer ){
+
+                items.forEach( item =>{
+                    if(item.isIntersecting){
+                        let image = item.target;
+                        image.src = image.dataset.src
+                        image.classList.remove('lazy')
+                        console.log(`image`)
+                        imgObserver.unobserve(image)
+                    }
+                })                
+            }) // new
+
+            lazyImgs.forEach(lazyimg =>{
+             //   console.log(lazyimg)
+                imgObserver.observe(lazyimg) 
+            })
+            } // if
+        })
+
+    </script>
+
+```
+
+
+
+
+
 
 :peach: 모든 이미지에 lazy load를 적용하지 않는 것이 좋습니다.
 
