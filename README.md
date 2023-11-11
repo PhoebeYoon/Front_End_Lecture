@@ -11,9 +11,9 @@ head 태그안에 지정한다.
 <link rel="preload" href="ComicSans.woff2" as="font" type="font/woff2" crossorigin>
 
 ```   
-여기서 as는 리소스의 유형을 알려주는 것으로 유형이 올바르지 않으면 브라우저는 해당 소스를 사용할 수 없다.   
-또한 preload는 같은 소스를 중복해서 사용하지 않도록 해야한다. 
-폰트를 preload 할때는 'crossorigin'를 추가합니다. crossorigin 속성없이 미리 로드된 글꼴은 두 번 가져오게 됩니다.   
+- 여기서 as는 리소스의 유형을 알려주는 것으로 유형이 올바르지 않으면 브라우저는 해당 소스를 사용할 수 없다.   
+- 또한 preload는 같은 소스를 중복해서 사용하지 않도록 해야한다. 
+- 폰트를 preload 할때는 'crossorigin'를 추가합니다. crossorigin 속성없이 미리 로드된 글꼴은 두 번 가져오게 됩니다.   
 
 >참고: preload는 모든 최신 브라우저에서 지원됩니다.
 
