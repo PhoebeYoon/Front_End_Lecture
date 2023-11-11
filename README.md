@@ -15,5 +15,8 @@ img { font-size: 1.5rem; font-style: italic; <-- 이미지를 제대로 로딩�
 </style>
 <img src="./img-high.png" alt="This is example how to access  every pages">
 ```
+출처: https://csswizardry.com/2023/09/the-ultimate-lqip-lcp-technique/
+
+
 
 
