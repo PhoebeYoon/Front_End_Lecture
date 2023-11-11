@@ -6,12 +6,12 @@
   <link rel="preload" as=image href="./img-lower.png" fetchpriority="high">
 
 <style>
-  img { font-size: 1.5rem; font-style: italic;  <-- 이미지를 제대로 로딩하지 못할때 alt속성에 넣은 글자
-      max-width: 100%; 
-      background-size: cover; height: auto;
-      vertical-align: middle;
-      background-image: url(./img-lower.png);
-  }
+img { font-size: 1.5rem; font-style: italic; <-- 이미지를 제대로 로딩하지 못할때 alt속성에 입힐 글자효과
+    max-width: 100%; 
+    background-size: cover; height: auto;
+    vertical-align: middle;
+    background-image: url(./img-lower.png);
+}
 </style>
 <img src="./img-high.png" alt="This is example how to access  every pages">
 ```
