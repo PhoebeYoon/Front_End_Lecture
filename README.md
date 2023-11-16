@@ -20,3 +20,27 @@ Here we can see that
 .person {} is the Block; it is the sole root of a discrete entity.    
 .person__head {} is an Element; it is a smaller part of the .person {} Block. Finally,   
 .person--tall {} is a Modifier; it is a specific variant of the .person {} Block.    
+
+
+위의 파일 실행방법 
+1. 터미널에서 npm install -g json-server
+2. db.json
+3. ```
+   {
+ "posts" :[{"id":1, "title":"json-server"}],
+ "comments" : [{"id":1 , "body":"some comment"}],
+ "profile":{"name":"ttt"}
+}
+```
+4. json-server --watch db.json 실행 후 터미널 창에
+```
+ Resources
+  http://localhost:3000/posts
+  http://localhost:3000/comments
+  http://localhost:3000/profile
+
+  Home
+  http://localhost:3000
+  ```
+출력된다.  
+
