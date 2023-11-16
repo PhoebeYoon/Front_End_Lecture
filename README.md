@@ -25,13 +25,15 @@ Here we can see that
 위의 파일 fullstack-javascript.zip 에서 json 부분 다룰때  실행방법 
 1. 터미널에서 npm install -g json-server
 2. db.json
-3. ```
-   {
+3.
+ ```json
+  {
  "posts" :[{"id":1, "title":"json-server"}],
  "comments" : [{"id":1 , "body":"some comment"}],
  "profile":{"name":"ttt"}
 }
 ```
+
 4. json-server --watch db.json 실행 후 터미널 창에
 ```
  Resources
