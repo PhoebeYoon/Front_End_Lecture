@@ -46,3 +46,11 @@ Here we can see that
   ```
 출력된다.  
 
+5. 파일 중 38_fetch.html 파일을 vscode로 불러온 후 설치된 확장 프로그램 Live Server 를 이용하여 브라우저로 연다.  
+
+
+📖  명령어 참조
+https://mirabo.tistory.com/178
+
+https://ko.javascript.info/fetch     
+https://docs.fileformat.com/ko/web/json/   
