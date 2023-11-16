@@ -22,7 +22,7 @@ Here we can see that
 .person--tall {} is a Modifier; it is a specific variant of the .person {} Block.    
 
 
-위의 파일 fullstack-javascript.zip 에서 json 부분 다룰때  실행방법 
+### 위의 파일 fullstack-javascript.zip 에서 json 부분 다룰때  실행방법 
 1. 터미널에서 npm install -g json-server
 2. db.json
 3.
