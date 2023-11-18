@@ -15,3 +15,6 @@
 
 ### 3. lvh (Large Viewport Height)
    lvh는 svh와는 반대로 사용자 화면 기준으로 가장 긴 뷰표트 값을 가져온다. 주소 표시줄이 있더라도 주소 표시줄이 없을 때의 총 화면의 길이를 가져온다.
+
+
+실습내용 출처 : https://www.youtube.com/watch?v=ru3U8MHbFFI&t=297s    
