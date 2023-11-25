@@ -39,11 +39,14 @@ index.html  ```( <link rel="stylesheet" href="/css/style.css"> 추가)```
 확장프로그램을 설치하면 위에서처럼 터미널에서 해줄 필요가 없다.    
 <img width="551" alt="스크린샷 2023-11-25 오후 4 59 38" src="https://github.com/PhoebeYoon/WhatKindOfLikeThis/assets/48478079/7ce64feb-1f4a-42dc-9d48-9b18735f8945">
 
-vscode> 설정 > 검색어 : live scss > ~ complier , Config 두개의 내용이 검색된다.  
-config로 검색된 내용을 살펴보면 'settings.json에서 편집' 보인다. 이곳을 클릭해서 settings.json 파일 내용을 연다.   
-내용중에 'liveSass ~~ ' 부분을 찾은 다음에   "liveSassCompile.settings.formats":  있는지 확인한다.   
+vscode> 설정 > 검색어 : live scss > ~ complier , Config 두개의 내용이 검색된다.    
+config로 검색된 내용을 살펴보면 **'settings.json에서 편집'** 보인다. 이곳을 클릭해서 **settings.json** 파일 내용을 연다.    
+내용중에 **'liveSass ~~ '** 부분을 찾은 다음에   
+**"liveSassCompile.settings.formats"** 있는지 확인한다.     
 만약 없다면 내용을 입력한다. 앞부분을 입력하면 자동완성으로 나머지 내용이 삽입된다.   
-그곳에 "savePath" :"/css"  ( null 로 되어 있다면 ) 적어준다.   
+그곳에 **"savePath" :"/css"**  ( null 로 되어 있다면 ) 적어준다.   
+또한,  **"format": "expanded"** 로 되어 있다면 압축된 형태가 아닌 일반형태이며   
+ **"format": "compressed"** 는 압축된 형태로 컴파일된다.   
 
 그러면 컴파일해서 \css폴더에 넣어주도록 만든다.   
 
