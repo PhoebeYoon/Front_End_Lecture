@@ -268,6 +268,6 @@ div:nth-child(60) {
   }
 ```
 
-참조 : https://www.youtube.com/watch?v=nu5mdN2JIwM    
+참조 : https://www.youtube.com/watch?v=nu5mdN2JIwM (실습파일)    
 
 
