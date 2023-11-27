@@ -55,7 +55,7 @@ config로 검색된 내용을 살펴보면 **'settings.json에서 편집'** 보�
 
 1. SCSS
 Sassy CSS, 가장 큰 특징은 기존 Sass의 문법에서, CSS의 원래 문법에서 사용되는 중괄호를 사용하여 CSS만 알던 사람들이 처음 접해도 직관적으로 의미를 이해할 수가 있다. 
-2. 비교
+2. 비교    
 [css]
 ```css
 ul {
@@ -94,7 +94,7 @@ ul {
 **네스팅** - 계층적으로 상속되는 CSS를 더욱 계층적으로 보이게 만드는 기능이다. 선택자에서 상위 계층을 적던 것을 정리하고 관련 요소들을 그룹으로 묶을 수 있게 되어 더욱 깔끔해진다.
 
 ### 🗒️ SassScript
-1. 변수 - $를 사용하여 변수를 지정한다. 중복된 단어를 변수로 치환하여 유지 보수가 쉬워진다.
+1. 변수 - $를 사용하여 변수를 지정한다. 중복된 단어를 변수로 치환하여 유지 보수가 쉬워진다.    
 [css]
 ```
 .dv1 {width:1000px;margin:0 auto;border:1px solid black}
@@ -104,7 +104,7 @@ ul {
 .dv5 {width:100px;position:absolute;border:1px solid black}
 ```
 
-[sass]  
+[sass]   
 ```
 $bLine:1px solid black; /* 여기만 바꾸면 5개의 클래스 값을 전부 바꿀 수 있다.  */
  
@@ -118,7 +118,8 @@ $bLine:1px solid black; /* 여기만 바꾸면 5개의 클래스 값을 전부 �
 2. 연산 - 값 대신 표현식을 지정할 수 있다. 값의 맥락을 명시할 때에 사용할 수 있다.    
    다만 상대값(% - px, vh - px 등)을 연산할 수는 없으므로 CSS에서 지원하는 calc() 함수를 써야 하며,    
    나눗셈의 / 기호 역시 CSS에서 grid-area 속성 등에서 사용하고 있기 때문에 나눗셈을 할 때에도 calc() 함수를 써야 한다.    
-   다만 나눗셈에 쓰이는 calc()는 CSS가 아닌 SASS에서 따로 사용하는 함수이다.   
+   다만 나눗셈에 쓰이는 calc()는 CSS가 아닌 SASS에서 따로 사용하는 함수이다.
+
 [css]
 ```
 .dv1 {float:left;width:101.11111px;margin-right:10px}
