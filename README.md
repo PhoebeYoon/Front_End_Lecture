@@ -33,3 +33,13 @@
 
 
 참조) https://css-tricks.com/a-guide-to-console-commands/
+
+
+## Dev Tools
+
+[element 탭]
+
+<img width="418" alt="스크린샷 2023-12-21 오후 2 49 12" src="https://github.com/PhoebeYoon/tag_css_js/assets/48478079/408e507b-a619-4f52-be80-d6f416ab1884">
+
+- 접혀있는 내용을 바로 펼쳐보기   
+<img width="388" alt="스크린샷 2023-12-21 오후 2 50 44" src="https://github.com/PhoebeYoon/tag_css_js/assets/48478079/270e52c7-1d27-4ce9-8763-c806bc0d6608">
