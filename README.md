@@ -37,9 +37,18 @@
 
 ## Dev Tools
 
-[element 탭]
+#### [element 탭]
 
 <img width="418" alt="스크린샷 2023-12-21 오후 2 49 12" src="https://github.com/PhoebeYoon/tag_css_js/assets/48478079/408e507b-a619-4f52-be80-d6f416ab1884">
 
-- 접혀있는 내용을 바로 펼쳐보기   
+#### 접혀있는 내용을 바로 펼쳐보기   
 <img width="388" alt="스크린샷 2023-12-21 오후 2 50 44" src="https://github.com/PhoebeYoon/tag_css_js/assets/48478079/270e52c7-1d27-4ce9-8763-c806bc0d6608">
+
+#### 선택한 내용을 js 코드로 보기   
+
+<img width="412" alt="스크린샷 2023-12-21 오후 2 58 33" src="https://github.com/PhoebeYoon/tag_css_js/assets/48478079/01082812-496a-41e1-83b5-0730cf1be65c">
+
+붙여넣기 하면 ``` document.querySelector("body > main > article.mobile_only > div") ```   이런식으로 나온다.   
+
+
+
