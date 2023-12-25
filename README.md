@@ -95,9 +95,9 @@
  <div class="box_vmax"></div>
 
 ```   
-브라우저의 개발자도구를 열고 아래 이미지의 테두리부분을 확인해 본다.  
+브라우저의 높이가 더 큰 경우로, 브라우저의 개발자도구를 열고 아래 이미지의 테두리부분을 확인해 본다.  
 
-<img width="781" alt="스크린샷 2023-12-25 오후 2 50 37" src="https://github.com/PhoebeYoon/tag_css_js/assets/48478079/79ee7383-7c63-4db1-b10c-e1aa95f07a9d">
+<img width="700" alt="스크린샷 2023-12-25 오후 2 50 37" src="https://github.com/PhoebeYoon/tag_css_js/assets/48478079/79ee7383-7c63-4db1-b10c-e1aa95f07a9d">
 
 
 위 코드 중 ``` width:100vmax``` 에서 만약 vmax 대신 px 이었다면 100px로 브라우저의 크기에 상관없이 그대로 100px이다.   
@@ -106,7 +106,9 @@
 위의 이미지에서 브라우저의 height가 .box_vmax의 width 가 된것을 확인해보자.   
 
 
+아래 이미지는 브라우저의 너비를 더 크게 했을 경우로써 .box_vmax의 width가 얼마로 계산되는지 확인해보자   
 
+<img width="700" alt="스크린샷 2023-12-25 오후 3 05 34" src="https://github.com/PhoebeYoon/tag_css_js/assets/48478079/e6ced778-39c0-4d45-ac2d-19245c7afdc7">
 
 
 
