@@ -46,18 +46,49 @@ animation-delay: calc(1s + 15ms);
   /* 오케이 */
   margin: calc(10px + 10px);
   margin: calc(20px - 10px);
-  margin: calc(30px / 3); // 나누기에는 단위가 필요없다  
+  margin: calc(30px / 3); // 나누기에는 단위가 필요없다
+  margin: calc(10px * 3); //곱하기(*)를 위해서는 숫자 중 하나가 단위가 없어야한다.
+  margin: calc(3 * 10px);
 
   /* 노 오케이 */
   margin: calc(10px + 5);
   margin: calc(20px + 10);
+  margin: calc(30px * 3px);
 }
 
 ```
 
+### 기호 양옆에 공백넣기 
 
+```css
+/* 오케이 */
+width: calc(
+    100%     /   3
+  );
 
+/* 노 오케이 */
+font-size: calc(3vw-2px); // - 기호 양옆에 공백추가해야 한다
+font-size: calc(3vw+2px);
 
+```
+
+### 연산자 우선순위에 따라 
+```css
+.el {
+  width: calc(100% / 3 - 1rem * 2);  // 연산자 우선순위에 따라 계산
+  width: calc((100% + 2rem) / 2); // 연산자 우선순위에 따라 계산
+}
+```   
+### 사용자지정 속성에도 사용할 수 있다.    
+
+```css
+html {
+  --spacing: 10px;
+}
+.module {
+  padding: calc(var(--spacing) * 2);
+}
+```
 
 
 
