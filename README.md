@@ -103,12 +103,12 @@
 
 위 코드 중 ``` width:100vmax``` 에서 만약 vmax 대신 px 이었다면 100px로 브라우저의 크기에 상관없이 그대로 100px이다.   
 그런데 vmax 이니까 브라우저의 너비와 높이 중 더 큰쪽인 height가 기준이 되고 
-100 이니까 브라우저의 높이의 100퍼센트인 707를 width값으로 잡는 것이다.    
+100 이니까 브라우저의 높이의 100퍼센트인 707를 취해서 width:707px 된다.        
 위의 이미지에서 브라우저의 height가 .box_vmax의 width 가 된것을 확인해보자.   
 
 
 #### 🍎  브라우저의 너비를 더 크게 했을 경우로써  
-.box_vmax의 width가 얼마로 계산되는지 확인해보자   
+.box_vmax의 width가 얼마로 계산되는지 확인해보자    .box_vmax의 너비는 844px이 된다.   
 
 <img width="700" alt="스크린샷 2023-12-25 오후 3 05 34" src="https://github.com/PhoebeYoon/tag_css_js/assets/48478079/e6ced778-39c0-4d45-ac2d-19245c7afdc7">
 
