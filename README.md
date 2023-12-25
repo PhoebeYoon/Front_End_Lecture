@@ -1,5 +1,44 @@
 ##### 🍑  Front_End 과정 1단계 
 
+## px vs percent
+```html
+<style>
+    .box { margin: 10px; background-color: orange;}
+    .px { width: 50px;}
+    .percent { width: 50%;}
+    .parent { width: 150px;}
+</style>
+<h1>웹에서 사용되는 단위들</h1>
+    <h2>부모가 없고 있고</h2>
+    <div class="box px" >px</div>
+    <div class="box percent">%</div>
+    <div class="parent">
+        <div class="box px" >parent px</div>
+        <div class="box percent">parent % </div>
+ </div>
+```
+
+## vw & vh   
+```html
+<style>
+.vw { width: 50vw;}
+.vh { width: 50vh;}
+</style>
+<h2>vw &amp; vh</h2>
+ <!--  너비의 크기를 뷰포트의 크기로 부터 계산하므로 유동적이다 -->
+<div class="box vw">vw</div>
+<div class="box vh">vh</div>
+
+```
+브라우저의 너비와 높이가 변할때마다 vw와 vh의 크기가 달라진다.    
+
+
+
+
+
+
+
+
 
 
 ### viewport를 단위로 사용
