@@ -1,5 +1,13 @@
 ##### 🍑  Front_End 과정 1단계 
 
+웹에서 사용되는 단위는 크게 절대적 단위와 상대적 단위로 크게 나눌 수 있다.  
+절대적 단위랑 그 크기가 지정된 뒤에는 다른 요소에 의해 변경되지 않는다는 것이고    
+상대적 단위는 크기자 지정된 뒤에도 다른 요소에 의해 변경될 수 있다는 것이다. 
+
+💚 절대적단위 : px(픽셀)    
+💙 상대적단위 : 퍼센트, em, rem,  뷰포트의 v가 들어간 것들이다.   
+
+
 ## px vs percent
 ```html
 <style>
@@ -21,16 +29,28 @@
 ## vw & vh   
 ```html
 <style>
-.vw { width: 50vw;}
-.vh { width: 50vh;}
+.box { margin: 10px; background-color: green;}
+.parent { width: 300px;  height: 300px;  border: 2px solid;}
+.percent { width: 50%;}
+.vw { width: 10vw;}
+.vh { height: 10vh;}
 </style>
-<h2>vw &amp; vh</h2>
+ <h2>vw &amp; vh</h2>
  <!--  너비의 크기를 뷰포트의 크기로 부터 계산하므로 유동적이다 -->
+<div class="box percent"> % </div>
 <div class="box vw">vw</div>
 <div class="box vh">vh</div>
 
-```
-브라우저의 너비와 높이가 변할때마다 vw와 vh의 크기가 달라진다.    
+<div class="parent">
+    <div class="box percent">parent % </div>
+    <div class="box vw">parent vw</div>
+    <div class="box vh">parent vh</div>
+</div>
+
+```   
+1. 우선, 브라우저를 움직여서 브라우저의 너비와 높이가 변할때마다 vw와 vh의 크기가 달라지는 것을 확인한다.   
+2. 그리고 퍼센트로 지정된 2개의 요소는 중 부모를 가진 요소는 브라우저의 크기에 상관없이 부모크기에 따라 자신의 크기가 지정된다는 것을 확인한다.
+3. vw, vh 단위를 가진 요소는 부모의 유무에 상관없이 브라우저의 크기에 따라 자신의 크기가 결정된다는 것을 확인한다. 
 
 
 
@@ -42,7 +62,7 @@
 
 
 ### viewport를 단위로 사용
-기존의 뷰포트를 사용하는 단위는 vw, vh, vmin, vmax 이었으나 현재는 더 많이 늘어났습니다. 이런 내용을 여기에서 다루어볼 예정입니다   
+뷰포트를 사용하는 단위는 vw, vh, vmin, vmax.  
 
 - vw: 너비를 나타내며 뷰포트 너비의 백분율을 나타냅니다.  vw 앞에 있는 숫자는 뷰포트 너비의 백분율입니다. 10vw는 뷰포트 너비의 10%길이에 해당합니다. 
 
