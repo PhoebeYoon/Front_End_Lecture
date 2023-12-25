@@ -45,9 +45,12 @@ animation-delay: calc(1s + 15ms);
 .el {
   /* 오케이 */
   margin: calc(10px + 10px);
+  margin: calc(20px - 10px);
+  margin: calc(30px / 3); // 나누기에는 단위가 필요없다  
 
   /* 노 오케이 */
   margin: calc(10px + 5);
+  margin: calc(20px + 10);
 }
 
 ```
