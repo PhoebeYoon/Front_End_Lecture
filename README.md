@@ -16,6 +16,44 @@ em, rem은 글자의 크기를 정할때만 사용하는 것이 아니라 width,
 
 그리고 여기서는 rem를 주로 다룰 예정입니다.   
 왜냐하면 em의 기준이 부모이기 때문에 nested 구조에서 em를 사용하면 안쪽에 있는 것들은 점점 작아지거나 점점 커지기 때문에 이를 보완하기 위해 rem이 나온것입니다.  
+### calc() 는 value이고 length 와 숫자(numeric thing)관련해서 사용된다. 
+
+```css
+.el {
+  font-size: calc(3vw + 2px);
+  width:     calc(100% - 20px);
+  height:    calc(100vh - 20px);
+  padding:   calc(1vw + 5px);
+}
+
+.el {
+  margin: 10px calc(2vw + 5px);
+  border-radius: 15px calc(15px / 3) 4px 2px;
+  transition: transform calc(1s - 120ms);
+}
+
+```
+> calc()는 문자관련해서는 사용하지 않으며 media query에도 사용하지 않는다.   
+
+### mixing units 
+```css
+transform: rotate(calc(1turn + 45deg));
+animation-delay: calc(1s + 15ms);
+```
+### + , - 사용
+```css
+.el {
+  /* 오케이 */
+  margin: calc(10px + 10px);
+
+  /* 노 오케이 */
+  margin: calc(10px + 5);
+}
+
+```
+
+
+
 
 
 
