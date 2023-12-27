@@ -2,6 +2,8 @@
 
 
 **rel 속성은 현재 문서와 연결된 문서 사이의 관계를 지정합니다. href 특성이 있는 경우에만 사용됩니다.**    
+
+
 rel : relation 약자,    
 href : hyper reference 의 약자   
 
@@ -30,8 +32,8 @@ href : hyper reference 의 약자
 
 ```html
 <link rel="stylesheet" href="style.css">
-    <link rel="preload" href="script.js" as="script">
-    <script  asyn src="script1.js" ></script>
+<link rel="preload" href="script.js" as="script">
+<script  asyn src="script1.js" ></script>
 </head>
 <body>
     <div>
