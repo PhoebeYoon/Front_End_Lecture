@@ -23,3 +23,6 @@ href : hyper reference 의 약자
 
 
 ```
+## javascript 로딩시 asyn, defer 사용 설명 
+
+<img width="874" alt="스크린샷 2023-12-27 오후 3 43 50" src="https://github.com/PhoebeYoon/tag_css_js/assets/48478079/e6058b22-7a50-4602-b13f-bec5d45707ef">
