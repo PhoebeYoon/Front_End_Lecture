@@ -29,6 +29,9 @@ href : hyper reference 의 약자
 
 <img width="874" alt="스크린샷 2023-12-27 오후 3 43 50" src="https://github.com/PhoebeYoon/tag_css_js/assets/48478079/e6058b22-7a50-4602-b13f-bec5d45707ef">
 
+preload로 인하여 js 로딩시간이 줄어든다.   
+
+
 
 ```html
 <link rel="stylesheet" href="style.css">
