@@ -84,6 +84,6 @@ srcset 다음에 size 라는 속성이 있습니다. 그러나 이 속성은 매
 </picture>
 
 ```
-
+break point 지정할때 도움이 될 사이트 : https://responsivebreakpoints.com/    
 
 참조 ) https://blog.webdevsimplified.com/2023-05/responsive-images/
