@@ -73,12 +73,12 @@ srcset 다음에 size 라는 속성이 있습니다. 그러나 이 속성은 매
 ### 2. picture 태그사용에 srcset 사용
 ```html
 <picture>
-        <source media="(min-width:1280px)"  srcset="../images/image-4x.png">
-        <source media="(min-width:1000px)"  srcset="../images/image-3x.png">
-        <source media="(min-width:800px)"   srcset="../images/image-2x.png">
-        <source media="(min-width:700px)"   srcset="../images/image-1x.png">
-        <img src="../images/image-src.png" alt="src 써진그림">
-    </picture>
+    <source media="(min-width:1280px)"  srcset="../images/image-4x.png">
+    <source media="(min-width:1000px)"  srcset="../images/image-3x.png">
+    <source media="(min-width:800px)"   srcset="../images/image-2x.png">
+    <source media="(min-width:700px)"   srcset="../images/image-1x.png">
+    <img src="../images/image-src.png" alt="src 써진그림">
+</picture>
 
 ```
 
