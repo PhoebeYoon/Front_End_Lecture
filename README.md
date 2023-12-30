@@ -12,7 +12,7 @@ blockquote { direction: rtl; width: 300px;}
   </blockquote>
   <blockquote>
     <p>هذه الفقرة باللغة العربية ، لذا يجب الانتقال من اليمين إلى اليسار.</p>
-    <p></p>
+
   </blockquote>
 ```
 
